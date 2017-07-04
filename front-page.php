@@ -34,7 +34,7 @@ get_header(); ?>
                     <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo2017.png" alt="Los Angeles"
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Item 1</h3>
+                        <h3>GROUP PHOTO!</h3>
                         <p>...</p>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ get_header(); ?>
                     <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo-camp.png" alt="Chicago"
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Item 2</h3>
+                        <h3>CAMP!</h3>
                         <p>...</p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ get_header(); ?>
                     <img src="<?php bloginfo('template_url'); ?>/images/carousel/venturering.png" alt="New York"
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Item 3</h3>
+                        <h3>TREK ON!</h3>
                         <p>...</p>
                     </div>
                 </div>
