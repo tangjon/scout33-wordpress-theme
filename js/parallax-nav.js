@@ -15,7 +15,7 @@
 //     });
 // });
 
-$('a[href^="#"]').bind('click', function(event) {
+$('nav a[href^="#"]').bind('click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
         scrollTop: ($($anchor.attr('href')).offset().top - 50)
