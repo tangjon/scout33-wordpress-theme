@@ -1,0 +1,83 @@
+max-width: 1600px;
+margin: 0 auto;
+
+
+@media screen and (min-width: 1025px)
+css_3YXu_wWyFty…XYMKal1E.css:7
+#container {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+css_3YXu_wWyFty…XYMKal1E.css:7
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+    <!-- Portfolio Modals -->
+
+<?php
+$j = 1;
+
+
+query_posts("category=3");
+if ( have_posts()): while ( have_posts() ): the_post();
+
+//$posts_array = get_posts(array(
+//    'category' => get_cat_ID('portfolio project')
+//))
+    ?>
+
+<?php
+//foreach ($posts_array as $post): the_post(); ?>
+
+
+
+
+    <div class="portfolio-modal modal fade" id="portfolioModal<?php echo $j ?>" tabindex="-1" role="dialog"
+         aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2><?php the_title() ?></h2>
+                            <hr class="star-primary">
+                            <?php the_post_thumbnail('', ['class' => 'img-responsive responsive--full']) ?>
+                            <p><?php the_content() ?></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php $j++ ?>
+    <?php
+//endforeach;
+endwhile; endif;
+wp_reset_postdata();
+?>

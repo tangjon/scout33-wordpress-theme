@@ -1,0 +1,277 @@
+/* COLORS */
+/* 
+#9c0c00 red;
+#000033 blue
+#F3DFA2 new yellow
+ffda83
+*/
+
+/*PALLET 1
+000033 blue
+9C0C00 red
+BB4430 less red
+7EBDC2 baby blue
+ F3DFA2 sand
+ */
+/* ===============
+   SELECTOR
+   =============== */
+
+/* ===============
+   WP Admin
+   =============== */
+
+span.edit-link {
+	float: right;
+}
+
+
+
+/* ===============
+   TEMPORARY
+   =============== */
+@media (min-width: 986px){
+	.container > .navbar-header {
+		margin-left: -60px;
+	}
+}
+
+
+
+/* Grow */
+.hvr-grow {
+	display: grid;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/* ===============
+   Site Layout
+   =============== */
+@media screen and (min-width: 1025px){  
+	div#container {
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+}
+
+body {
+	background: #F3DFA2;
+}
+
+header {
+	background: #BB4430;
+}
+
+header hr.star-light:after {
+	background-color: #bb4430;
+}
+
+a, a.active, a:active, a:focus, a:hover {
+	color: #F44336;
+}
+.navbar-custom .navbar-nav li.active a, .navbar-custom .navbar-nav li.active a:active, .navbar-custom .navbar-nav li.active a:focus, .navbar-custom .navbar-nav li.active a:hover {
+	color: #fff;
+	background: #9c0c00;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav > li > a {
+		padding-bottom: 14px;
+	}
+}
+/* ===============
+   Navigation
+   =============== */
+.navbar-custom {
+    background: #000033;
+    background: url('../images/navbarbanner5.png') no-repeat center bottom;
+
+}
+
+.navbar-custom .navbar-nav li a:hover {
+    color: #F44336
+}
+
+@media (max-width: 1200px) {
+	.navbar-custom {
+		background-position: -275px;
+	}
+}
+/* ---------------
+   Collapse
+   --------------- */
+
+@media (max-width: 768px) {
+	.navbar-collapse {
+		background: #000033;
+	}
+}
+/* ===============
+   Carousel
+   =============== */
+
+.carousel-caption {
+	text-align: left;
+	left: 5%;
+	padding-bottom: 69px;
+}
+
+@media (max-width: 768px) {
+	.carousel-caption h3{
+		font-size: 1.00em;
+	}
+	.carousel-caption p{
+		font-size: 0.75em;
+	}
+	.carousel-caption {
+		padding-bottom: 0px;
+	}
+}
+section#carousel{
+	padding-top: 68px;
+	padding-bottom: 0px;
+}
+
+.carousel-inner > .item > img {
+	margin: 0 auto;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	/*min-width: 100%;*/
+	width: 100%;
+	/*max-width: 100%;*/
+	/*line-height: 1;*/
+}
+
+/*FULL Width Images*/
+.carousel-control{
+	width: 5%;
+}
+/*Removes drop shadow of arrows*/
+.carousel-control.right, .carousel-control.left{
+	background-image: none;
+	opacity: 1;
+}
+
+.myarrow {
+	background-color: #FFFFFF;
+	border-color: #CCCCCC;
+	color: #FFFFFF;
+}
+
+/* ===============
+   HEADER
+   =============== */
+.thumbnail div#aboutus{
+	background: beige;
+}
+
+.thumbnail div#schedule{
+	background: #f5f5dc;
+}
+
+
+
+/* ===============
+   Sections
+   =============== */
+
+/* ---------------
+   Quick Strip
+   --------------- */
+
+section#quick-strip{
+	background-color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+	.col-md-4 {
+		width: 25%;
+
+	}
+}
+
+/* CARDS */
+.cardicon {
+	font-size: 105px;
+	text-align: center;
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.cardicon {
+		font-size: 40px;
+	}
+}
+
+.card .thumbnail .caption{
+	text-align: center;
+	color:white;
+}
+
+.cardicon .glyphicon {
+	padding-top: 33px;
+}
+
+
+.card div#calendar {
+	background-color: #83389b;
+}
+
+.card div#form {
+	background-color: #2E86AB;
+}
+
+.card div#connect {
+	background-color: #F24236;
+}
+.card div#connect .btn-outline:hover {
+	color: #f24236;
+}
+
+.card div#plus {
+	background-color: #f9a01f;
+}
+
+a#ghost:hover {
+	text-decoration: none;
+}
+
+/* ---------------
+   Our Sections
+   --------------- */
+
+section#sections {
+	background: #7EBDC2;
+	text-align: center;
+}
+
+section#sections hr.star-primary:after {
+	background-color: #7ebdc2;
+	color: #2C3E50;
+}
+
+.caption img#section-logo {
+	height: 155px;
+	padding-top: 33px;
+}
+
+section#sections hr.star-primary {
+	border-color: #ffffff;
+}
+
+section#sections h2 {
+	color: #FFFFFF;
+}
