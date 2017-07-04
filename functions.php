@@ -145,28 +145,27 @@ function tangyjon_styles(){
 add_action( 'wp_enqueue_scripts', 'tangyjon_styles' );
 
 
+function load_jquery(){
+    wp_deregister_script('jquery');
+    wp_enqueue_script('jquery',  get_stylesheet_directory_uri() . '/vendor/jquery/jquery.min.js', array(), null, true);
+}
+add_action( 'wp_enqueue_scripts', 'load_jquery' );
+
 // STYLE AND SCRIPTS
 function wpbootstrap_scripts_with_jquery()
 {
-    // Register the script like this for a theme:
-    wp_enqueue_script( 'bootstrap-script', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '' , true );
 
-    wp_enqueue_script( 'parallax-nav-script', get_stylesheet_directory_uri() . '/js/parallax-nav.js', array( 'jquery'), '' , true );
+        wp_enqueue_script( 'bootstrap-script', get_stylesheet_directory_uri() . '/vendor/bootstrap/bootstrap.min.js', array(), '' , true );
 
-    wp_enqueue_script( 'freelancer-script', get_stylesheet_directory_uri() . '/js/freelancer.js', array( 'jquery' ), '' , true );
+        wp_enqueue_script('js-plugin', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array(), null, true);
 
-    wp_enqueue_script( 'freelancer-min-script', get_stylesheet_directory_uri() . '/js/freelancer.min.js', array( 'jquery' ), '' , true );
+        wp_enqueue_script( 'freelancer-min-script', get_stylesheet_directory_uri() . '/js/freelancer.min.js', array(), '' , true );
 
-    wp_enqueue_script( 'jquery-script', get_stylesheet_directory_uri() . '/js/jquery-3.2.1.min.js', array('jquery'), '' , true );
-
-
-//    wp_enqueue_script( 'jquery.easing.min-script', get_stylesheet_directory_uri() . '/js/jquery.easing.min.js', array(), '' , true );
+        wp_enqueue_script( 'parallax-nav-script', get_stylesheet_directory_uri() . '/js/parallax-nav.js', array(), '' , true );
 
 //    wp_enqueue_script( 'jqBootstrapValidation-script', get_stylesheet_directory_uri() . '/js/jqBootstrapValidation.js', array(), '' , true );
 
 //    wp_enqueue_script( 'contact-me-script', get_stylesheet_directory_uri() . '/js/contact_me.js', array(), '' , true );
-
-
 }
 
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
