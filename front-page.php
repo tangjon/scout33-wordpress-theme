@@ -158,7 +158,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <header>
+    <header id="abouts">
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">

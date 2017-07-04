@@ -153,7 +153,9 @@ function wpbootstrap_scripts_with_jquery()
 
     wp_enqueue_script( 'parallax-nav-script', get_stylesheet_directory_uri() . '/js/parallax-nav.js', array( 'jquery'), '' , true );
 
-    wp_enqueue_script( 'freelancer-script', get_stylesheet_directory_uri() . '/js/freelancer.min.js', array(), '' , true );
+    wp_enqueue_script( 'freelancer-script', get_stylesheet_directory_uri() . '/js/freelancer.js', array( 'jquery' ), '' , true );
+
+    wp_enqueue_script( 'freelancer-min-script', get_stylesheet_directory_uri() . '/js/freelancer.min.js', array( 'jquery' ), '' , true );
 
     wp_enqueue_script( 'jquery-script', get_stylesheet_directory_uri() . '/js/jquery-3.2.1.min.js', array('jquery'), '' , true );
 
