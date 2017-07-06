@@ -21,32 +21,37 @@
 
 <body <?php body_class(); ?>>
 
-<?php if( is_front_page() )?>
+<?php if (is_front_page()) ?>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom affix-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <a class="navbar-brand" href="#page-top">       <a class="navbar-brand" href="<?php echo home_url(); ?>">
+            <a class="navbar-brand" href="#page-top">
+                <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <?php bloginfo('name'); ?>
-                </a></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <p id="subtitle">SCOUTING GROUP</p>
+                </a>
+
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
             </button>
-
         </div>
+
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <?php
-        wp_nav_menu( array(
-                'menu'              => 'primary',
-                'theme_location'    => 'primary',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav navbar-right',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker())
+        wp_nav_menu(array(
+                'menu' => 'primary',
+                'theme_location' => 'primary',
+                'depth' => 2,
+                'container' => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id' => 'bs-example-navbar-collapse-1',
+                'menu_class' => 'nav navbar-nav navbar-right',
+                'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                'walker' => new WP_Bootstrap_Navwalker())
         );
         ?>
         <!-- /.navbar-collapse -->
@@ -55,11 +60,7 @@
 </nav>
 
 
-
-
 </body>
-
-
 
 
 </body>

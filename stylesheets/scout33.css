@@ -17,6 +17,25 @@ BB4430 less red
    SELECTOR
    =============== */
 
+@media (min-width: 768px){
+	p#subtitle {
+		font-size: .70em;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		 transition: all .3s;
+	}
+}
+
+@media (max-width: 768px){
+	p#subtitle {
+		font-size: .50em;
+	}
+
+	/*.navbar-custom.affix .navbar-brand{*/
+		/*padding-bottom: 0px;*/
+	/*}*/
+}
+
 /* ===============
    WP Admin
    =============== */
@@ -97,6 +116,7 @@ a, a.active, a:active, a:focus, a:hover {
 .navbar-custom {
     background: #000033;
     background: url('../images/navbarbanner5.png') no-repeat center bottom;
+	background-position: -375px;
 
 }
 
@@ -104,11 +124,34 @@ a, a.active, a:active, a:focus, a:hover {
     color: #F44336
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
 	.navbar-custom {
-		background-position: -275px;
+		/*background-position: -360px;*/
+		background-position: -255px;
 	}
 }
+
+@media (min-width: 1530px) {
+	.navbar-custom {
+		background-position: 0px;
+	}
+}@media (max-width: 768px) {
+	.navbar-header.page-scroll {
+		 padding-bottom: 9px;
+	}
+}
+
+.navbar-custom .navbar-toggle {
+	color: #fff;
+	border-color: #fff;
+}
+
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:hover {
+	background-color: #9c0c00;
+	color: #fff;
+	border-color: #fff;
+}
+
 /* ---------------
    Collapse
    --------------- */

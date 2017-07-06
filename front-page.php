@@ -15,7 +15,7 @@
 get_header(); ?>
 
 
-    <div id="container" xmlns:http="http://www.w3.org/1999/xhtml">
+    <div id="container">
 
 
     <section id="carousel">

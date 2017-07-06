@@ -159,7 +159,8 @@ function wpbootstrap_scripts_with_jquery()
 
         wp_enqueue_script('js-plugin', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array(), null, true);
 
-        wp_enqueue_script( 'freelancer-min-script', get_stylesheet_directory_uri() . '/js/freelancer.min.js', array(), '' , true );
+//        wp_enqueue_script( 'freelancer-min-script', get_stylesheet_directory_uri() . '/js/freelancer.min.js', array(), '' , true );
+        wp_enqueue_script( 'freelancer-script', get_stylesheet_directory_uri() . '/js/freelancer.js', array(), '' , true );
 
         wp_enqueue_script( 'parallax-nav-script', get_stylesheet_directory_uri() . '/js/parallax-nav.js', array(), '' , true );
 
