@@ -241,6 +241,8 @@ section#carousel{
 
 section#quick-strip{
 	background-color: #FFFFFF;
+	padding-top: 32px;
+	padding-bottom: 15px;
 }
 
 @media (min-width: 992px) {
