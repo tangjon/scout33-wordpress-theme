@@ -193,7 +193,7 @@ get_header(); ?>
                                 <p>Beavers meet every Saturday at 12:30 PM</p>
                                 <hr>
                                 <p>Cubs & Scouts & Venturers meet every Saturday at 2:00 PM to 4:30 PM (Badge testing
-                                    starts at 1:30 PM)</p>
+                                    starts at 1:30 PM).</p>
                             </div>
                         </div>
                         <div class="thumbnail">
