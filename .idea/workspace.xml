@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="107b78c7-4802-47eb-97d5-902d1a6cb8f9" name="Default" comment="">
+    <list default="true" id="107b78c7-4802-47eb-97d5-902d1a6cb8f9" name="Default" comment="update worksapce">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +39,8 @@
       <file leaf-file-name="wp_bootstrap_navwalker.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp_bootstrap_navwalker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="221">
+              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -377,7 +377,7 @@
       <updated>1499045608478</updated>
       <workItem from="1499045610849" duration="37989000" />
       <workItem from="1499137751978" duration="7952000" />
-      <workItem from="1499146533001" duration="11963000" />
+      <workItem from="1499146533001" duration="12065000" />
     </task>
     <task id="LOCAL-00001" summary="Clean up files">
       <created>1499138675577</created>
@@ -421,11 +421,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499495642654</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update worksapce">
+      <created>1499495684016</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499495684016</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57904000" />
+    <option name="totallyTimeSpent" value="58006000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +445,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -472,7 +478,8 @@
     <MESSAGE value="Update footer and carousel" />
     <MESSAGE value="Cleanup css" />
     <MESSAGE value="readd css" />
-    <option name="LAST_COMMIT_MESSAGE" value="readd css" />
+    <MESSAGE value="update worksapce" />
+    <option name="LAST_COMMIT_MESSAGE" value="update worksapce" />
   </component>
   <component name="WordPressConfiguration" doNotAskConfigAgain="true" enabled="true">
     <wordpressPath>C:\wamp64\www\scout33.org</wordpressPath>
@@ -833,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp_bootstrap_navwalker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="221">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
         </state>
       </provider>
