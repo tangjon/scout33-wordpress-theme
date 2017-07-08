@@ -17,7 +17,7 @@ get_header(); ?>
 
     <div id="container">
 
-
+    <!--Images from CACHE-->
     <section id="carousel">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -74,6 +74,8 @@ get_header(); ?>
             </a>
         </div>
     </section>
+
+
 
     <section id="quick-strip">
         <div class="container">

@@ -182,6 +182,14 @@ function load_fonts() {
 add_action('wp_print_styles', 'load_fonts');
 
 /**
+ * CUSTOM FUNCTIONS
+ */
+add_filter('pull_content_filter', 'pull_content');
+function pull_content($content) {
+    
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
