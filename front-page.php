@@ -119,11 +119,11 @@ get_header(); ?>
                                                     class="fa fa-fw fa-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i
+                                        <a href="mailto:contact@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i
                                                     class="fa fa-fw fa-envelope"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i
+                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" class="btn-social btn-outline"><span class="sr-only">Youtube</span><i
                                                     class="fa fa-fw fa-youtube"></i></a>
                                     </li
                                 </ul>
