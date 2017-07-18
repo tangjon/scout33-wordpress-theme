@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="footer-col col-md-4">
                     <h3>Location</h3>
-                    <p>3680 W 49th Ave
+                    <p>680 W 49th Ave
                         <br>Vancouver, BC V5Z 2S4
                         <br>St. Mathias Church</p>
                 </div>
