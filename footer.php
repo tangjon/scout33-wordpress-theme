@@ -21,7 +21,7 @@
                     <h3>Location</h3>
                     <p>680 W 49th Ave
                         <br>Vancouver, BC V5Z 2S4
-                        <br>St. Mathias Church</p>
+                        <br>St. Matthias & St. Luke Church</p>
                 </div>
                 <div class="footer-col col-md-4">
                     <h3>Around the Web</h3>
