@@ -153,7 +153,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
     <header id="abouts">
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
@@ -188,17 +187,8 @@ get_header(); ?>
 
                     </div>
                     <div class="col-lg-6">
-                        <div class="thumbnail">
-                            <div id="schedule" class="caption">
-                                <h3>Meeting Schedule</h3>
-                                <p>Beavers meet every Saturday at 12:30 PM</p>
-                                <hr>
-                                <p>Cubs & Scouts & Venturers meet every Saturday at 2:00 PM to 4:30 PM (Badge testing
-                                    starts at 1:30 PM).</p>
-                            </div>
-                        </div>
-                        <div class="thumbnail">
-                            <div class="caption">
+                        <div  class="thumbnail">
+                            <div id="mission-statement" class="caption">
                                 <h3>Our Mission Statement</h3>
                                 <hr>
                                 <p>The 33rd Group emphasizes the importance of life outside the classroom. Our mission
@@ -209,14 +199,27 @@ get_header(); ?>
                                     community.</p>
                             </div>
                         </div>
+                        <div class="thumbnail">
+                            <div id="schedule" class="caption">
+                                <h3>Meeting Schedule</h3>
+                                <hr>
+                                <h4>BEAVERS</h4>
+                                <p>12:30PM to 1:30PM</p>
+                                <hr>
+                                <h4>CUBS, SCOUTS, VENTURERS</h4>
+                                <p>2:00PM to 4:30PM</p>
+                                <hr>
+                                <h4>Badge Testing</h4>
+                                <p>1:30PM</p>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
             </section>
         </div>
     </header>
-
-
     <section id="sections">
         <div class="container">
             <div class="row">

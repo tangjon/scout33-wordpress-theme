@@ -226,12 +226,17 @@ section#carousel {
 /* ===============
    HEADER
    =============== */
-.thumbnail div#aboutus {
+/* .thumbnail div#aboutus {
     background: beige;
 }
 
 .thumbnail div#schedule {
     background: #f5f5dc;
+} */
+
+.thumbnail div#aboutus{
+    color: white;
+    background-color: #bb4430;
 }
 
 /* ===============
