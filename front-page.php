@@ -120,7 +120,7 @@ get_header(); ?>
                                                     class="fa fa-fw fa-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="mailto:contact@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i
+                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i
                                                     class="fa fa-fw fa-envelope"></i></a>
                                     </li>
                                     <li>
