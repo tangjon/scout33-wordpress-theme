@@ -134,15 +134,14 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-
-                    <a id="ghost" class="hvr-grow href=" #">
+                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
                     <div class="card">
                         <div id="plus" class="thumbnail">
                             <div class="cardicon">
                                 <span class="glyphicon glyphicon-plus aria-hidden=" true"></span>
                             </div>
                             <div class="caption">
-                                <h3>Thumbnail label</h3>
+                                <h3>Resources</h3>
 
                             </div>
                         </div>
