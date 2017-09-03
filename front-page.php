@@ -74,6 +74,16 @@ get_header(); ?>
         </div>
     </section>
 
+    <section id="notice-strip">
+        <div class="container">
+            <div class="row text-center">
+                <h1 style="">Notice :</h1>
+                <p>Scouting year begins September 9th during regular meetings hours</p>
+                <p>Some sections are still accepting members</p>                
+            </div>
+        </div>
+    </section>
+
 
 
     <section id="quick-strip">

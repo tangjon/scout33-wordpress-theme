@@ -345,3 +345,8 @@ section#contact{
     padding-bottom: .5em;
     /* border-bottom: 1px solid #eee; */
 }
+
+#notice-strip {
+    background-color: #9c0c00;
+    color: white;
+}
