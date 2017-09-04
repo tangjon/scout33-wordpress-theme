@@ -1,0 +1,75 @@
+/* Custom CSS */
+
+/*SIDEBAR*/
+h2.widget-title {
+    font-size: 2.5em;
+}
+
+.sidebar {
+    padding: 12px;
+    float: right;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: #000033;
+    color: white;
+    padding-top: 15px;
+}
+
+@media (max-width: 1200px){
+    .sidebar{
+        margin-top: 18px;
+        float: left;
+    }
+}
+
+.widget-area section {
+    padding: 0px;
+    padding-bottom: 15px;
+}
+
+/*PAGE CONTENT */
+.page-content {
+    background: beige;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.page-content span.edit-link.btn.btn-default {
+    /* margin-top: 12px; */
+}
+
+.edit-link a {
+    color: black;
+}
+
+.entry-footer {
+    color: #000;
+    padding-bottom: 30px;
+}
+
+/*COMMENT SECTION */
+.comment-respond, .comment-list, .comments-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    }
+    
+    .comments-title {
+        background: #000033;
+        font-size: 2em;
+        color: white;
+    }
+    
+    .comment-respond{
+        background:beige;
+    }
+    
+    .comment-list {
+        padding-left: 40px;
+        background: beige;
+    }
+    
+    .comment-list footer{
+        color:black;
+    }

@@ -44,7 +44,7 @@
 		?>
 
 		<div class="entry-meta">
-			<?php popper_posted_on(); ?>
+			<?php tangyjon_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -61,10 +61,10 @@
 	<?php
 		if ( $first_post == false ) { ?>
 			<footer class="entry-footer">
-				<?php popper_entry_footer(); ?>
+				<?php tangyjon_entry_footer(); ?>
 			</footer><!-- .entry-footer -->
 		<?php } else { 
-			echo popper_modify_read_more_link();
+			echo tangyjon_modify_read_more_link();
 		}
-?>
+	?>
 </article><!-- #post-## -->

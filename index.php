@@ -15,8 +15,8 @@
 get_header(); ?>
 
 <div id="container">
-        <section id="blog" class="container-fluid">
-            <div id="posts" class="col-lg-8">
+        <section class="container-fluid">
+            <div class="col-lg-8">
                 <?php if (have_posts()) : ?>
 
 
@@ -29,7 +29,7 @@ get_header(); ?>
                     <!--   Generate the Posts    -->
                     <?php /* Start the Loop */ ?>
                     <?php while (have_posts()) : the_post(); ?>
-
+                        <div class="page-content">
                         <?php
                         // Is this the first post of the front page?
                         $first_post = $wp_query->current_post == 0 && !is_paged() && is_front_page();
@@ -46,18 +46,20 @@ get_header(); ?>
                         }
 
                         ?>
+                        </div>
 
                     <?php endwhile; ?>
 
 
                 <?php else : ?>
                     <?php get_template_part('template-parts/content', 'none'); ?>
-
                 <?php endif; ?>
             </div>
 
-            <div id="sidebar" class ="col-md-4">
-                <?php get_sidebar('page-templates/page-sidebar-right.php'); ?>
+            <div class ="col-md-4">
+                <div class="sidebar">
+                    <?php get_sidebar('page-templates/page-sidebar-right.php'); ?>
+                </div>
             </div>
         </section>
 

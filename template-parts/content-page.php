@@ -34,7 +34,7 @@
 						esc_html__( 'Edit %s', 'tangyjon' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
-					'<span class="edit-link">',
+					'<span class="edit-link btn btn-default">',
 					'</span>'
 				);
 			?>

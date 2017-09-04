@@ -131,14 +131,16 @@ function tangyjon_styles(){
 
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
-    wp_enqueue_style('scout33', get_template_directory_uri() . '/stylesheets/scout33.css');
+	wp_enqueue_style('scout33', get_template_directory_uri() . '/stylesheets/scout33.css');
+	
+    wp_enqueue_style('style', get_template_directory_uri() . '/style.css');	
 
-    if( is_front_page() ){
-        wp_enqueue_style( 'tangyjon-style', get_stylesheet_uri() );
-    }
-    else {
-        wp_enqueue_style( 'blog-style', get_template_directory_uri()  . '/stylesheets/blog-style.css');
-    }
+    // if( is_front_page() ){
+    //     wp_enqueue_style( 'tangyjon-style', get_stylesheet_uri() );
+    // }
+    // else {
+    //     wp_enqueue_style( 'blog-style', get_template_directory_uri()  . '/stylesheets/blog-style.css');
+    // }
 }
 add_action( 'wp_enqueue_scripts', 'tangyjon_styles' );
 

@@ -15,26 +15,29 @@
 get_header(); ?>
 
 	<div id="container">
-        <section id="blog" class="container-fluid">
-            <div id="posts" class="col-lg-8">
-                <?php
-                while ( have_posts() ) : the_post();
+        <section class="container-fluid">
+            <div class="col-lg-8">
+                <div class="page-content">
+                    <?php
+                    while ( have_posts() ) : the_post();
 
-                    get_template_part( 'template-parts/content', 'page' );
+                        get_template_part( 'template-parts/content', 'page' );
 
-                    // If comments are open or we have at least one comment, load up the comment template.
-                    if ( comments_open() || get_comments_number() ) :
-                        comments_template();
-                    endif;
+                        // If comments are open or we have at least one comment, load up the comment template.
+                        if ( comments_open() || get_comments_number() ) :
+                            comments_template();
+                        endif;
 
-                endwhile; // End of the loop.
-                ?>
+                    endwhile; // End of the loop.
+                    ?>
+                </div>   
             </div>
-            <div id="sidebar" class ="col-md-4">
-                <?php get_sidebar('page-templates/page-sidebar-right.php'); ?>
+            <div class ="col-md-4">
+                <div class="sidebar">
+                    <?php get_sidebar('page-templates/page-sidebar-right.php'); ?>
+                </div>
             </div>
         </section>
-
 <?php
 get_sidebar();
 get_footer();

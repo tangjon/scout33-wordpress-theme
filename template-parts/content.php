@@ -43,7 +43,7 @@
 
 
         <?php
-        echo tangyjon_modify_read_more_link();
+        // echo tangyjon_modify_read_more_link();
         ?>
 
 
