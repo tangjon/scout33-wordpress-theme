@@ -78,11 +78,7 @@ get_header(); ?>
         <div class="container" style="width:55em">
             <div class="row text-left">
                 <h1 style="">Notice :</h1>
-                <p>1. Scouting year begins September 9th during regular meetings hours</p>
-                <p>2. Some sections are still accepting members</p>       
-                <p>3. Venturer Fundraising Dinner will be coming up on Saturday, September 30</p>  
-                <li style="font-size: 120%; padding-left: 39px;">Selling $17 tickets on September 16 and 23</li>  
-                <li style="font-size: 120%; padding-left: 39px;">The theme is Mid-Autumn Festival, so feel free to wear any traditional Chinese costumes</li>     
+                <p>1. Some sections are still accepting members</p>       
             </div>
         </div>
     </section>
