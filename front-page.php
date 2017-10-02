@@ -158,6 +158,7 @@ get_header(); ?>
                     </a>
 
                 </div>
+                
             </div>
         </div>
     </section>
@@ -179,7 +180,7 @@ get_header(); ?>
                     <div class="col-lg-6">
                         <div class="thumbnail">
                             <div id="aboutus" class="caption">
-                                <h3>About Us</h3>
+                                <h1>About Us</h1>
                                 <p>We are a sized Scouting group proud to be a part of the country’s largest youth
                                     driven organization, Scouts Canada. We strive to lead youth in discovering new
                                     experiences where they would not else where, such as camping, water-sports, hiking,
@@ -190,6 +191,14 @@ get_header(); ?>
                                     <br><br>Scouting offers a world where you can discover the best in yourself and the
                                     best in others. Dollar for dollar, our programs provide significant value. They run
                                     all year round and offer adventures that youth will remember for a lifetime!</p>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <div id="" class="caption">
+                                <h1>Our Volunteers</h1>
+                                <p>Volunteers make activites and oppurtunity possible for our group. Without them, we would not be able to create wonderful experiences</p>
+                                <a href="<?php site_url(); ?>/volunteers">
+                                <button type="button" class="btn btn-primary">See Our Volunteers</button></a>
                             </div>
                         </div>
 
