@@ -362,3 +362,10 @@ blockquote {
 .entry-title a {
     color: white;
 }
+
+/* For images to align center */
+.aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
