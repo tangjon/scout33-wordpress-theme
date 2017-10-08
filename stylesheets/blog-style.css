@@ -194,3 +194,9 @@ padding: 15px;
 .comment-list footer{
     color:black;
 }
+
+.aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
