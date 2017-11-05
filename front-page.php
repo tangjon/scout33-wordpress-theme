@@ -78,7 +78,8 @@ get_header(); ?>
         <div class="container" style="width:55em">
             <div class="row text-left">
                 <h1 style="">Notice :</h1>
-                <p>1. Some sections are still accepting members</p>       
+                <p>1. Some sections are still accepting members</p>    
+                <p>2. Rememberance Day Parade Update!!! <br> Dispersal is 11:30 AM! </p>   
             </div>
         </div>
     </section>
