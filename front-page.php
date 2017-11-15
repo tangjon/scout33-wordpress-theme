@@ -74,15 +74,20 @@ get_header(); ?>
         </div>
     </section>
 
+    <?php  
+    $notice = get_theme_mod( 'scout33_notice_msg_setting', '' );
+    if(!empty($notice)) : 
+    ?>
     <section id="notice-strip">
         <div class="container" style="width:55em">
             <div class="row text-left">
                 <h1 style="">Notice :</h1>
-                <p>1. Some sections are still accepting members</p>    
+                <!-- <p>1. Some sections are still accepting members</p>     -->
+                <p><?php echo $notice ?></p>
             </div>
         </div>
     </section>
-
+    <?php endif; ?>
 
 
     <section id="quick-strip">

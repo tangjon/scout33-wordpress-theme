@@ -14,6 +14,45 @@ function tangyjon_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+	// $wp_customize->add_setting('notice_msg', array(
+	// 	'default' => 'nothing to see here',
+	// 	'transport' => 'refresh'
+	// ));
+	$wp_customize->add_setting( 'scout33_notice_msg_setting', array(
+		'capability' => 'edit_theme_options',
+		'default' => 'Lorem Ipsum'
+	  ) );
+
+	$wp_customize->add_section('notice_msg_section', array(
+		'title' => 'Notice Message',
+		'prority' => 0 
+	));
+
+	$wp_customize->add_control( 'scout33_notice_msg_setting', array(
+		'type' => 'textarea',
+		'section' => 'notice_msg_section', // Add a default or your own section
+		'label' => __( 'Custom Text' ),
+		'description' => __( 'This is a custom text box.' ),
+	  ) );
+
+	// Remove Existing Exisitng Custimizer Sections
+	//=============================================================
+	// Remove header image and widgets option from theme customizer
+	//=============================================================
+	$wp_customize->remove_control("header_image");
+	$wp_customize->remove_panel("widgets");
+
+	//=============================================================
+	// Remove Colors, Background image, and Static front page 
+	// option from theme customizer     
+	//=============================================================
+	$wp_customize->remove_section("colors");
+	$wp_customize->remove_section("background_image");
+	$wp_customize->remove_section("static_front_page");
+	$wp_customize->remove_section("custom_css");
+
+	
 }
 add_action( 'customize_register', 'tangyjon_customize_register' );
 
