@@ -79,8 +79,8 @@ get_header(); ?>
     if(!empty($notice)) : 
     ?>
     <section id="notice-strip">
-        <div class="container" style="width:55em">
-            <div class="row text-left">
+        <div class="container">
+            <div id="notice-message" class="row text-left">
                 <h1 style="">Notice :</h1>
                 <!-- <p>1. Some sections are still accepting members</p>     -->
                 <p><?php echo $notice ?></p>
@@ -352,10 +352,10 @@ get_header(); ?>
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
+            <div class="row text-center">
+     
                         <?php echo do_shortcode('[contact-form-7 id="2788" title="Contact form 1"]')?>
-                </div>
+        
             </div>
         </div>
     </section>

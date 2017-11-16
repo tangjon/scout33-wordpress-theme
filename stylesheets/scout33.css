@@ -339,6 +339,16 @@ section#contact{
     background: #FFFFFF;
 }
 
+@media (max-width: 420px){
+
+    #wpcf7-f43-o1 form input[type=text],#wpcf7-f43-o1 form input[type=email], #wpcf7-f43-o1 form textarea  {
+        width: 342px;
+    }
+}
+
+
+
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
@@ -369,3 +379,32 @@ blockquote {
     margin-right: auto;
     margin-left: auto;
 }
+
+
+/* Notice message */
+#notice-strip {
+    background-color: #9c0c00;
+    color: white;
+}
+
+@media (min-width: 0px) {
+    #notice-message{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 320px) {
+    #notice-message{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (min-width: 768px) {
+    #notice-message{
+        padding-left: 168px;
+        padding-right: 168px;
+    }
+}
+
+
