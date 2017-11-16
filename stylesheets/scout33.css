@@ -339,10 +339,16 @@ section#contact{
     background: #FFFFFF;
 }
 
-@media (max-width: 420px){
+@media (min-width: 320px){
+    .wpcf7 form input[type=text], .wpcf7 form input[type=email], .wpcf7 form textarea  {
+        width: 280px;
+    }
+}
 
-    #wpcf7-f43-o1 form input[type=text],#wpcf7-f43-o1 form input[type=email], #wpcf7-f43-o1 form textarea  {
-        width: 342px;
+@media (min-width: 420px){
+    
+    .wpcf7 form input[type=text], .wpcf7 form input[type=email], .wpcf7 form textarea  {
+        width: 418px;
     }
 }
 
