@@ -354,7 +354,7 @@ get_header(); ?>
             </div>
             <div class="row text-center">
      
-                        <?php echo do_shortcode('[contact-form-7 id="2788" title="Contact form 1"]')?>
+                        <p>Please contact <b>info@scout33.org</p>
         
             </div>
         </div>
