@@ -152,7 +152,7 @@ get_header(); ?>
                     <div class="card">
                         <div id="plus" class="thumbnail">
                             <div class="cardicon">
-                                <span class="glyphicon glyphicon-plus aria-hidden=" true"></span>
+                                <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
                             </div>
                             <div class="caption">
                                 <h3>Resources</h3>
