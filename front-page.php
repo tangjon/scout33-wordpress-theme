@@ -92,9 +92,9 @@ get_header(); ?>
 
     <section id="quick-strip">
         <div class="container">
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
+            <div class="row"> 
+                <!-- Calendar -->
+                <div class="col-sm-6 col-md-4"> 
                     <a id="ghost" class="hvr-grow" href="http://www.scout33.org/calendar/">
                         <div class="card">
                             <div id="calendar" class="thumbnail">
@@ -109,6 +109,7 @@ get_header(); ?>
                         </div>
                     </a>
                 </div>
+                <!-- Form -->
                 <div class="col-sm-6 col-md-4">
                     <a id="ghost" class="hvr-grow" href="http://www.scout33.org/form/">
                         <div class="card">
@@ -124,6 +125,7 @@ get_header(); ?>
                         </div>
                     </a>
                 </div>
+                <!-- Social Media -->
                 <div class="col-sm-6 col-md-4">
                     <div class="card">
                         <div id="connect" class="thumbnail">
@@ -148,6 +150,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </div>
+                <!-- Resources -->
                 <div class="col-sm-6 col-md-4">
                     <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
                     <div class="card">
