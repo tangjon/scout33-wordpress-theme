@@ -16,6 +16,7 @@ h2.widget-title {
     padding-top: 15px;
 }
 
+
 @media (max-width: 1200px){
     .sidebar{
         margin-top: 18px;
@@ -73,3 +74,18 @@ h2.widget-title {
     .comment-list footer{
         color:black;
     }
+
+/* Footer */
+.row {
+    padding-bottom:50px;
+}
+/* Mobile Devices */
+@media only screen and (max-width: 700px) {
+    /* Footer */
+    .footer-above .container .row .col-sm-4{
+        display:none;
+    }
+    .footer-above .container .row .col-sm-4:first-child{
+        display: grid;
+    }
+}
