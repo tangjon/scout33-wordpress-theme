@@ -97,6 +97,21 @@ get_header(); ?>
                 <div class="col-sm-6 col-md-4">
                     <a id="ghost" class="hvr-grow" href="http://www.scout33.org/calendar/">
                         <div class="card">
+                            <div id="calendar" class="thumbnail">
+                                <div class="cardicon">
+                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                </div>
+                                <div class="caption">
+                                    <h3>Calendar</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/form/">
+                        <div class="card">
                             <div id="form" class="thumbnail">
                                 <div class="cardicon">
                                     <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
