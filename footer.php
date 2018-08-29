@@ -15,15 +15,15 @@
 
 <footer class="text-center">
     <div class="footer-above">
-        <div class="container">
+        <div class="container-grid">
             <div class="row">
-                <div class="footer-col col-md-4">
+                <div class="col-sm-4">
                     <h3>Location</h3>
                     <p>680 W 49th Ave
                         <br>Vancouver, BC V5Z 2S4
                         <br>St. Matthias & St. Luke Church</p>
                 </div>
-                <div class="footer-col col-md-4">
+                <div class="col-sm-4">
                     <h3>Around the Web</h3>
                     <ul class="list-inline">
                         <li>
@@ -40,7 +40,7 @@
                         </li
                     </ul>
                 </div>
-                <div class="footer-col col-md-4">
+                <div class="col-sm-4">
                     <h3>About Freelancer</h3>
                     <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                 </div>
