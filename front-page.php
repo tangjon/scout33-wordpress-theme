@@ -74,19 +74,19 @@ get_header(); ?>
         </div>
     </section>
 
-    <?php  
-    $notice = get_theme_mod( 'scout33_notice_msg_setting', '' );
-    if(!empty($notice)) : 
-    ?>
-    <section id="notice-strip">
-        <div class="container">
-            <div id="notice-message" class="row text-left">
-                <h1 style="">Notice :</h1>
-                <!-- <p>1. Some sections are still accepting members</p>     -->
-                <p><?php echo $notice ?></p>
+    <?php
+    $notice = get_theme_mod('scout33_notice_msg_setting', '');
+    if (!empty($notice)) :
+        ?>
+        <section id="notice-strip">
+            <div class="container">
+                <div id="notice-message" class="row text-left">
+                    <h1 style="">Notice :</h1>
+                    <!-- <p>1. Some sections are still accepting members</p>     -->
+                    <p><?php echo $notice ?></p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     <?php endif; ?>
 
 
@@ -119,7 +119,6 @@ get_header(); ?>
                                 </div>
                                 <div class="caption">
                                     <h3>Forms</h3>
-
                                 </div>
                             </div>
                         </div>
@@ -133,15 +132,18 @@ get_header(); ?>
                                 <h3>Connect</h3>
                                 <ul class="list-inline">
                                     <li>
-                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i
+                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span
+                                                    class="sr-only">Facebook</span><i
                                                     class="fa fa-fw fa-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i
+                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span
+                                                    class="sr-only">Mail</span><i
                                                     class="fa fa-fw fa-envelope"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" class="btn-social btn-outline"><span class="sr-only">Youtube</span><i
+                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA"
+                                           class="btn-social btn-outline"><span class="sr-only">Youtube</span><i
                                                     class="fa fa-fw fa-youtube"></i></a>
                                     </li
                                 </ul>
@@ -153,21 +155,21 @@ get_header(); ?>
                 <!-- Resources -->
                 <div class="col-sm-6 col-md-4">
                     <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
-                    <div class="card">
-                        <div id="plus" class="thumbnail">
-                            <div class="cardicon">
-                                <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
-                            </div>
-                            <div class="caption">
-                                <h3>Resources</h3>
+                        <div class="card">
+                            <div id="plus" class="thumbnail">
+                                <div class="cardicon">
+                                    <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
+                                </div>
+                                <div class="caption">
+                                    <h3>Resources</h3>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </a>
 
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -205,15 +207,17 @@ get_header(); ?>
                         <div class="thumbnail">
                             <div id="" class="caption">
                                 <h1>Our Volunteers</h1>
-                                <p>Volunteers make activites and oppurtunity possible for our group. Without them, we would not be able to create wonderful experiences</p>
+                                <p>Volunteers make activites and oppurtunity possible for our group. Without them, we
+                                    would not be able to create wonderful experiences</p>
                                 <a href="<?php site_url(); ?>/volunteers">
-                                <button type="button" class="btn btn-primary">See Our Volunteers</button></a>
+                                    <button type="button" class="btn btn-primary">See Our Volunteers</button>
+                                </a>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-lg-6">
-                        <div  class="thumbnail">
+                        <div class="thumbnail">
                             <div id="mission-statement" class="caption">
                                 <h3>Our Mission Statement</h3>
                                 <hr>
@@ -266,7 +270,8 @@ get_header(); ?>
                                 little bit of everything – outdoor activities, games, music and sports. Along the way,
                                 Beaver Scouts meet new friends, learn cooperation and teamwork and develop
                                 self-confidence</p>
-                            <p><a href="<?php site_url(); ?>/section-beavers" class="btn btn-primary" role="button">More Info</a>
+                            <p><a href="<?php site_url(); ?>/section-beavers" class="btn btn-primary" role="button">More
+                                    Info</a>
                         </div>
                     </div>
                 </div>
@@ -281,7 +286,8 @@ get_header(); ?>
                                 new and more challenging activities. Learning important first aid skills, paddling a
                                 canoe for the first time, or leading a game at camp will open the door for Cubs to try
                                 other adventures they never thought possible</p>
-                            <p><a href="<?php site_url(); ?>/section-cubs" class="btn btn-primary" role="button">More Info</a>
+                            <p><a href="<?php site_url(); ?>/section-cubs" class="btn btn-primary" role="button">More
+                                    Info</a>
                         </div>
                     </div>
                 </div>
@@ -294,7 +300,8 @@ get_header(); ?>
                             <h3>Scouts</h3>
                             <p>Scouts enjoy outdoor adventures like mountain biking, rock climbing and lots of camping
                                 while working together with other young people to accomplish thrilling challenges</p>
-                            <p><a href="<?php site_url(); ?>/section-scouts" class="btn btn-primary" role="button">More Info</a>
+                            <p><a href="<?php site_url(); ?>/section-scouts" class="btn btn-primary" role="button">More
+                                    Info</a>
                         </div>
                     </div>
                 </div>
@@ -309,7 +316,8 @@ get_header(); ?>
                             <h3>Venturers</h3>
                             <p>Venturer Scouts learn to nurture an active, healthy lifestyle, acquire the knowledge and
                                 skills for career development and participate in thrilling outdoor adventures</p>
-                            <p><a href="<?php site_url(); ?>/section-venturers" class="btn btn-primary" role="button">More Info</a>
+                            <p><a href="<?php site_url(); ?>/section-venturers" class="btn btn-primary" role="button">More
+                                    Info</a>
                         </div>
                     </div>
                 </div>
@@ -324,7 +332,8 @@ get_header(); ?>
                                 rafting. Helping in their local communities Rover Scouts run service activities such as
                                 food drives, park clean-ups and tree plantings. They act in leadership roles with
                                 younger Scouting Sections</p>
-                            <p><a href="<?php site_url(); ?>/section-rovers" class="btn btn-primary" role="button">More Info</a>
+                            <p><a href="<?php site_url(); ?>/section-rovers" class="btn btn-primary" role="button">More
+                                    Info</a>
                         </div>
                     </div>
                 </div>
@@ -339,7 +348,8 @@ get_header(); ?>
                                 to sleep in a tent, to experience leadership and to build self-reliance and
                                 self-confidence. Volunteer dedication, resourcefulness and enthusiasm are vital to
                                 Scouting</p>
-                            <p><a href="<?php site_url(); ?>/section-leader" class="btn btn-primary" role="button">More Info</a>
+                            <p><a href="<?php site_url(); ?>/section-leader" class="btn btn-primary" role="button">More
+                                    Info</a>
                         </div>
                     </div>
                 </div>
@@ -357,9 +367,9 @@ get_header(); ?>
                 </div>
             </div>
             <div class="row text-center">
-     
-                        <p>Please contact <b>info@scout33.org</p>
-        
+
+                <p>Please contact <b>info@scout33.org</p>
+
             </div>
         </div>
     </section>
