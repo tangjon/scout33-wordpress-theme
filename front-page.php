@@ -30,8 +30,8 @@ get_header(); ?>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo2017.png" alt="Los Angeles"
-                         class="img-responsive">
+                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/Group_2017.JPG" alt="Group Photo"
+                         class="img-responsive" style = "width:1600px; height">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>GROUP PHOTO!</h3>
                         <p>...</p>
@@ -39,7 +39,7 @@ get_header(); ?>
                 </div>
 
                 <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo-camp.png" alt="Chicago"
+                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo-camp.png" alt="Group Camp"
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>CAMP!</h3>
@@ -48,7 +48,7 @@ get_header(); ?>
                 </div>
 
                 <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/venturering.png" alt="New York"
+                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/venturering.png" alt="Venture hike"
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>TREK ON!</h3>
