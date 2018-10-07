@@ -26,7 +26,6 @@ get_header(); ?>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
@@ -92,9 +91,9 @@ get_header(); ?>
 
     <section id="quick-strip">
         <div class="container">
-            <div class="row"> 
+            <div class="row">
                 <!-- Calendar -->
-                <div class="col-sm-6 col-md-4"> 
+                <div class="col-sm-6 col-md-4">
                     <a id="ghost" class="hvr-grow" href="http://www.scout33.org/calendar/">
                         <div class="card">
                             <div id="calendar" class="thumbnail">
