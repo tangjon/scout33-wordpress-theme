@@ -30,11 +30,11 @@ get_header(); ?>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo2017.png" alt="Group Photo"
+                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo2018.png" alt="Group Photo"
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>GROUP PHOTO!</h3>
-                        <p>...</p>
+                        <p>2018</p>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ get_header(); ?>
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>CAMP!</h3>
-                        <p>...</p>
+                        <p>2017</p>
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@ get_header(); ?>
                          class="img-responsive">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>TREK ON!</h3>
-                        <p>...</p>
+                        <p>2017</p>
                     </div>
                 </div>
             </div>
