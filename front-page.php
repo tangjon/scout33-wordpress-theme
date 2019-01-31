@@ -356,6 +356,22 @@ get_header(); ?>
         </div>
     </section>
 
+    <section id="sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Our Sponsors</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row text-center">
+
+            <img src="<?php bloginfo('template_url'); ?>/images/sponsors.jpg" alt="sponsors"
+                         class="img-responsive">
+
+            </div>
+        </div>
+    </section>
 
     <section id="contact">
         <div class="container">

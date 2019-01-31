@@ -333,6 +333,12 @@ section#sections h2 {
     color: #FFFFFF;
 }
 
+/*SPONSORS*/
+
+section#sponsors{
+    background-color: #e6e6e6;
+}
+
 /*CONTACT*/
 
 section#contact{
