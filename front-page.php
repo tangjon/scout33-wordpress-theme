@@ -242,6 +242,13 @@ get_header(); ?>
                                 <p>1:30PM</p>
                             </div>
                         </div>
+                        <div class="thumbnail">
+                            <div id="report" class="caption ">
+                                <a href="<?php bloginfo('template_url'); ?>/files/2018-Annual-Report.pdf" alt="Group Photo">SEE OUR ANNUAL REPORT</a>
+                                <span class="glyphicon glyphicon-file"></span>
+
+                            </div>
+                        </div>
 
                     </div>
 
@@ -360,7 +367,7 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Our Sponsors</h2>
+                    <h2>Corporate Sponsors for the 2018 Group Annual Dinner</h2>
                     <hr class="star-primary">
                 </div>
             </div>

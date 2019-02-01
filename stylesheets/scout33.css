@@ -239,6 +239,17 @@ section#carousel {
     background-color: #bb4430;
 }
 
+div#report {
+    color: white;
+    background: #9c0c00;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#report a {
+    color: white;
+}
+
 /* ===============
    Sections
    =============== */
