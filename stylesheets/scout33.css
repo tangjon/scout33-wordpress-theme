@@ -6,6 +6,14 @@
 ffda83
 */
 
+div#album_title {
+    margin: 0 15px;
+    background-color: #9c0c00;
+    color: white;
+    padding-left: 11px;
+    font-size: 13px;
+}
+
 /*PALLET 1
 000033 blue
 9C0C00 red
