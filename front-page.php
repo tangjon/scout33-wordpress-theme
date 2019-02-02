@@ -244,7 +244,7 @@ get_header(); ?>
                         </div>
                         <div class="thumbnail">
                             <div id="report" class="caption ">
-                                <a href="<?php bloginfo('template_url'); ?>/files/2018-Annual-Report.pdf" alt="Group Photo">SEE OUR ANNUAL REPORT</a>
+                                <a href="<?php bloginfo('template_url'); ?>/files/2018-Annual-Report.pdf">SEE OUR ANNUAL REPORT</a>
                                 <span class="glyphicon glyphicon-file"></span>
 
                             </div>

@@ -438,4 +438,7 @@ blockquote {
     }
 }
 
-
+#myCarousel .item.active {
+    border: none!important;
+    margin: unset!important;
+}
