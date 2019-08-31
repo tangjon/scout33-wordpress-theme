@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -14,7 +15,7 @@
 
 get_header(); ?>
 
-    <div id="container">
+<div id="container">
 
     <!--Images from CACHE-->
     <section id="carousel">
@@ -22,55 +23,56 @@ get_header(); ?>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <?php
+                $counter = 0;
+                $args = array('category' => 30, 'post_type' =>  'post');
+                $catPost = get_posts($args); //change this
+                foreach ($catPost as $post) : setup_postdata($post); ?>
+                    <li data-target="#myCarousel" data-slide-to="<?php echo $counter; ?>" class="active"></li>
+                    <?php $counter++; ?>
+                <?php endforeach; ?>
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo2018.png" alt="Group Photo"
-                         class="img-responsive">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>GROUP PHOTO!</h3>
-                        <p>2018</p>
-                    </div>
-                </div>
 
-                <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/group-photo-camp.png" alt="Group Camp"
-                         class="img-responsive">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>CAMP!</h3>
-                        <p>2017</p>
-                    </div>
-                </div>
+                <?php
+                $counter = 0;
+                $args = array('category' => 30, 'post_type' =>  'post');
+                $catPost = get_posts($args); //change this
+                foreach ($catPost as $post) : setup_postdata($post); ?>
 
-                <div class="item">
-                    <img src="<?php bloginfo('template_url'); ?>/images/carousel/venturering.png" alt="Venture"
-                         class="img-responsive">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>TREK ON!</h3>
-                        <p>2017</p>
-                    </div>
-                </div>
+                        <?php if ($counter == 0) : ?>
+                            <div class='item active'>
+                        <?php else : ?>
+                            <div class='item'>
+                        <?php endif; ?>
+                        <?php $counter++ ?>
+                            <?php the_post_thumbnail() ?>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_content(); ?></p>
+                            </div>
+                            </div>
+                        
+                        <?php endforeach; ?>
+                        </div>
+
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <div class="myarrow">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </div>
+
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <div class="myarrow">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </div>
+                        </a>
             </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <div class="myarrow">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </div>
-
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <div class="myarrow">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </div>
-            </a>
-        </div>
     </section>
 
     <?php
@@ -131,46 +133,33 @@ get_header(); ?>
                                 <h3>Connect</h3>
                                 <ul class="list-inline">
                                     <li>
-                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span
-                                                    class="sr-only">Facebook</span><i
-                                                    class="fa fa-fw fa-facebook"></i></a>
+                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span
-                                                    class="sr-only">Mail</span><i
-                                                    class="fa fa-fw fa-envelope"></i></a>
+                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i class="fa fa-fw fa-envelope"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA"
-                                           class="btn-social btn-outline"><span class="sr-only">Youtube</span><i
-                                                    class="fa fa-fw fa-youtube"></i></a>
-                                    </li
-                                </ul>
+                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" class="btn-social btn-outline"><span class="sr-only">Youtube</span><i class="fa fa-fw fa-youtube"></i></a>
+                                    </li </ul> </div> </div> </div> </div> <!-- Resources -->
+                                    <div class="col-sm-6 col-md-4">
+                                        <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
+                                            <div class="card">
+                                                <div id="plus" class="thumbnail">
+                                                    <div class="cardicon">
+                                                        <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
+                                                    </div>
+                                                    <div class="caption">
+                                                        <h3>Resources</h3>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
 
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Resources -->
-                <div class="col-sm-6 col-md-4">
-                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
-                        <div class="card">
-                            <div id="plus" class="thumbnail">
-                                <div class="cardicon">
-                                    <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
-                                </div>
-                                <div class="caption">
-                                    <h3>Resources</h3>
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
     </section>
     <header id="abouts">
         <div class="container" id="maincontent" tabindex="-1">
@@ -268,9 +257,7 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo"
-                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/beaver-logo.png"
-                                 alt="leader-logo">
+                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/beaver-logo.png" alt="leader-logo">
                             <h3>Beavers</h3>
                             <p>Beaver Scouts opens the door for your child to discover the world. It is filled with a
                                 little bit of everything – outdoor activities, games, music and sports. Along the way,
@@ -284,9 +271,7 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo"
-                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/cub-logo.png"
-                                 alt="leader-logo">
+                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/cub-logo.png" alt="leader-logo">
                             <h3>Cubs</h3>
                             <p>With the Cub motto of “Do Your Best” front and centre, Cub Scouts are encouraged to try
                                 new and more challenging activities. Learning important first aid skills, paddling a
@@ -300,9 +285,7 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo"
-                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/scout-logo.png"
-                                 alt="leader-logo">
+                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/scout-logo.png" alt="leader-logo">
                             <h3>Scouts</h3>
                             <p>Scouts enjoy outdoor adventures like mountain biking, rock climbing and lots of camping
                                 while working together with other young people to accomplish thrilling challenges</p>
@@ -316,9 +299,7 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo"
-                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/venturer-logo.png"
-                                 alt="leader-logo">
+                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/venturer-logo.png" alt="leader-logo">
                             <h3>Venturers</h3>
                             <p>Venturer Scouts learn to nurture an active, healthy lifestyle, acquire the knowledge and
                                 skills for career development and participate in thrilling outdoor adventures</p>
@@ -330,9 +311,7 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo"
-                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/rover-logo.png"
-                                 alt="leader-logo">
+                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/rover-logo.png" alt="leader-logo">
                             <h3>Rovers</h3>
                             <p>Rover Scouts participate in adventurous activities like mountain climbing or white water
                                 rafting. Helping in their local communities Rover Scouts run service activities such as
@@ -346,9 +325,7 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo"
-                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/leader-logo.png"
-                                 alt="leader-logo">
+                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/leader-logo.png" alt="leader-logo">
                             <h3>Leaders</h3>
                             <p>Scouting volunteers have provided generations of Canadian youth with a first opportunity
                                 to sleep in a tent, to experience leadership and to build self-reliance and
@@ -373,8 +350,7 @@ get_header(); ?>
             </div>
             <div class="row text-center">
 
-            <img src="<?php bloginfo('template_url'); ?>/images/sponsors.jpg" alt="sponsors"
-                         class="img-responsive">
+                <img src="<?php bloginfo('template_url'); ?>/images/sponsors.jpg" alt="sponsors" class="img-responsive">
 
             </div>
         </div>
@@ -399,9 +375,6 @@ get_header(); ?>
 
 
 
-<?php
+    <?php
 
-get_footer();
-
-
-
+    get_footer();
