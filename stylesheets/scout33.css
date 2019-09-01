@@ -204,8 +204,12 @@ section#carousel {
 }
 
 .carousel-inner > .item > img {
-    height: 600;
+    height: 600px;
     width: auto
+}
+.carousel-inner {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 
