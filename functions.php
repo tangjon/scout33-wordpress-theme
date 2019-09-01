@@ -42,6 +42,7 @@ function tangyjon_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'carousel', 1600, 600 );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -185,6 +186,9 @@ add_action('wp_print_styles', 'load_fonts');
 /**
  * CUSTOM FUNCTIONS
  */
+add_image_size( 'carousel', 1600, 800 );
+
+
 add_filter('pull_content_filter', 'pull_content');
 function pull_content($content) {
 

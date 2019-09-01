@@ -204,15 +204,10 @@ section#carousel {
 }
 
 .carousel-inner > .item > img {
-    margin: 0 auto;
+    height: 600;
+    width: auto
 }
 
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    /*min-width: 100%;*/
-    width: 100%;
-    /*max-width: 100%;*/
-    /*line-height: 1;*/
-}
 
 /*FULL Width Images*/
 .carousel-control {

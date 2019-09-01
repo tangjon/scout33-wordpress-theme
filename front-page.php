@@ -47,7 +47,7 @@ get_header(); ?>
                             <div class='item'>
                         <?php endif; ?>
                         <?php $counter++ ?>
-                            <?php the_post_thumbnail() ?>
+                            <?php the_post_thumbnail('full') ?>
                             <div class="carousel-caption d-none d-md-block">
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_content(); ?></p>
