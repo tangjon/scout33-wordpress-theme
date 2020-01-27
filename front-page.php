@@ -344,14 +344,12 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Corporate Sponsors for the 2018 Group Annual Dinner</h2>
+                    <h2><?php echo ( get_theme_mod( 'sponsor_image_title_setting' ) ); ?></h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row text-center">
-
-                <img src="<?php bloginfo('template_url'); ?>/images/sponsors.jpg" alt="sponsors" class="img-responsive">
-
+                <img src="<?php echo esc_url( get_theme_mod( 'sponsor_image_setting' ) ); ?>" alt="sponsors" class="img-responsive">
             </div>
         </div>
     </section>
