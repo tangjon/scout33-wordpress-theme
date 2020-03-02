@@ -41,19 +41,19 @@ get_header(); ?>
                 $catPost = get_posts($args); //change this
                 foreach ($catPost as $post) : setup_postdata($post); ?>
 
-                        <?php if ($counter == 0) : ?>
-                            <div class='item active'>
+                    <?php if ($counter == 0) : ?>
+                        <div class='item active'>
                         <?php else : ?>
                             <div class='item'>
-                        <?php endif; ?>
-                        <?php $counter++ ?>
+                            <?php endif; ?>
+                            <?php $counter++ ?>
                             <?php the_post_thumbnail('full') ?>
                             <div class="carousel-caption d-none d-md-block">
                                 <h3><?php the_title(); ?></h3>
                                 <p><?php the_content(); ?></p>
                             </div>
                             </div>
-                        
+
                         <?php endforeach; ?>
                         </div>
 
@@ -78,7 +78,7 @@ get_header(); ?>
     <?php
     $notice = get_theme_mod('scout33_notice_msg_setting', '');
     if (!empty($notice)) :
-        ?>
+    ?>
         <section id="notice-strip">
             <div class="container">
                 <div id="notice-message" class="row text-left">
@@ -233,7 +233,7 @@ get_header(); ?>
                         </div>
                         <div class="thumbnail">
                             <div id="report" class="caption ">
-                                <a href="<?php bloginfo('template_url'); ?>/files/2018-Annual-Report.pdf">SEE OUR ANNUAL REPORT</a>
+                                <a href="<?php bloginfo('template_url'); ?>/files/2019-Annual-Report.pdf">SEE OUR ANNUAL REPORT</a>
                                 <span class="glyphicon glyphicon-file"></span>
 
                             </div>
@@ -344,17 +344,16 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2><?php echo ( get_theme_mod( 'sponsor_image_title_setting' ) ); ?></h2>
+                    <h2><?php echo (get_theme_mod('sponsor_image_title_setting')); ?></h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row text-center">
-                <img src="<?php echo esc_url( get_theme_mod( 'sponsor_image_setting' ) ); ?>" alt="sponsors" class="img-responsive">
+                <img src="<?php echo esc_url(get_theme_mod('sponsor_image_setting')); ?>" alt="sponsors" class="img-responsive">
             </div>
         </div>
     </section>
-<!--    sdas
--->
+
     <section id="contact">
         <div class="container">
             <div class="row">
