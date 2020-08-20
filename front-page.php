@@ -233,9 +233,8 @@ get_header(); ?>
                         </div>
                         <div class="thumbnail">
                             <div id="report" class="caption ">
-                                <a href="<?php bloginfo('template_url'); ?>/files/2019-Annual-Report.pdf">SEE OUR ANNUAL REPORT</a>
+                                <a href="<?php echo esc_url( get_theme_mod( 'annual_report_setting' ) ); ?>">SEE OUR ANNUAL REPORT</a>
                                 <span class="glyphicon glyphicon-file"></span>
-
                             </div>
                         </div>
 

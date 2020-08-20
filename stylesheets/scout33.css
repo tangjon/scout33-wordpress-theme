@@ -156,8 +156,15 @@ a, a.active, a:active, a:focus, a:hover {
 }
 
 section#carousel {
-    padding-top: 68px;
-    padding-bottom: 0px;
+    padding-top: 67px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    section#carousel {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .carousel-inner > .item > img {

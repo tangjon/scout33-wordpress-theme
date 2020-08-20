@@ -56,7 +56,7 @@ function tangyjon_customize_register($wp_customize)
         'section' => 'notice_msg_section',
         'label' => __('Notice Message Box'),
         'description' => __('This message will display on the front page'),
-        'prority' => 29
+        'priority' => 29
     ));
 
 
@@ -90,6 +90,23 @@ function tangyjon_customize_register($wp_customize)
         'label' => __('Sponsor Image', 'name-theme'),
         'section' => 'sponsor-image',
         'settings' => 'sponsor_image_setting',
+    )));
+
+
+    // ANNUAL REPORT =====
+    $wp_customize->add_section('annual_report_section', array(
+        'title'             => __('Annual Report', 'name-theme'),
+        'priority'          => 10000,
+    ));
+
+    $wp_customize->add_setting('annual_report_setting', array(
+        'transport'         => 'refresh'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, 'customizer_setting_pdf', array(
+        'label'             => __('PDF Upload', 'name-theme'),
+        'section'           => 'annual_report_section',
+        'settings'          => 'annual_report_setting',
     )));
 
 
