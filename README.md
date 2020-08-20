@@ -2,7 +2,6 @@
 
 A custom WordPress theme for https://www.scout33.org/
 
-
 # Notable Features
 
 - Custom stylesheet across the site
@@ -12,7 +11,6 @@ A custom WordPress theme for https://www.scout33.org/
 
 1. Copy the contents of this project into the WordPress themes folder
 2. Import and select this theme through the WordPress UI
-
 
 # Maintainers
 
