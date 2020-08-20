@@ -20,6 +20,9 @@ get_header(); ?>
     <!--Images from CACHE-->
     <section id="carousel">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -34,18 +37,43 @@ get_header(); ?>
                 <?php
                 $i = 0;
                 $ids = the_featured_image_gallery();
-                foreach($ids as $term){
+                foreach($ids as $image_id){
+                    $image = get_post($image_id);
+                    $image_title = $image->post_title;
+                    $image_caption = $image->post_excerpt;
                     if ($i == 0){
                         echo '<div class="item active">';
                     } else {
                         echo '<div class="item">';
                     }
-                    echo wp_get_attachment_image($term, $attr=["class" => "d-block w-100"]) .
+                    echo wp_get_attachment_image($image_id, $attr=["class" => "d-block w-100"]) .
+                        '<div class="carousel-caption">' .
+                        '<h3>' .
+                        $image_title .
+                        '</h3>'.
+                        '<p>' .
+                        $image_caption .
+                        '</p>'.
+                        '</div>' .
                         '</div>';
                     $i++;
+
                 }
                 ?>
             </div>
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators">
+                <?php for($j = 0; $j < $i; ++$j) {
+                    if ($j == 0) {
+                        echo '<li data-target="#myCarousel" data-slide-to="0" class="active"></li>';
+                    } else {
+                        echo '<li data-target="#myCarousel" data-slide-to="' .
+                            $j .
+                            'class="active"></li>';
+                    }
+                }?>
+            </ol>
     </section>
 
     <?php
