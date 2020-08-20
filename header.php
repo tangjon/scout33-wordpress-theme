@@ -26,11 +26,13 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <a class="navbar-brand" href="#page-top">
+            <a href="#page-top">
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <?php bloginfo('name'); ?>
                     <p id="subtitle">SCOUTING GROUP</p>
                 </a>
+
+
 
             </a>
             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -38,6 +40,8 @@
                 <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
             </button>
         </div>
+
+
 
 
         <!-- Collect the nav links, forms, and other content for toggling -->

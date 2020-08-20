@@ -46,7 +46,7 @@ get_header(); ?>
                     } else {
                         echo '<div class="item">';
                     }
-                    echo wp_get_attachment_image($image_id, $attr=["class" => "d-block w-100"]) .
+                    echo wp_get_attachment_image($image_id, $size='medium ', $attr=["class" => "d-block w-100"]) .
                         '<div class="carousel-caption">' .
                         '<h3>' .
                         $image_title .

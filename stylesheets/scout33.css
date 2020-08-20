@@ -20,29 +20,7 @@ div#album_title {
 BB4430 less red
 7EBDC2 baby blue
  F3DFA2 sand
- */
-/* ===============
-   SELECTOR
-   =============== */
-
-@media (min-width: 768px) {
-    p#subtitle {
-        font-size: .70em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-}
-
-@media (max-width: 768px) {
-    p#subtitle {
-        font-size: .50em;
-    }
-
-    /*.navbar-custom.affix .navbar-brand{*/
-    /*padding-bottom: 0px;*/
-    /*}*/
-}
+*/
 
 /* ===============
    WP Admin
@@ -50,15 +28,6 @@ BB4430 less red
 
 span.edit-link {
     float: right;
-}
-
-/* ===============
-   TEMPORARY
-   =============== */
-@media (min-width: 986px) {
-    .container > .navbar-header {
-        margin-left: -60px;
-    }
 }
 
 /* Grow */
@@ -82,13 +51,6 @@ span.edit-link {
 /* ===============
    Site Layout
    =============== */
-@media screen and (min-width: 1025px) {
-    div#container {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
-}
-
 body {
     background: #F3DFA2;
 }
@@ -123,46 +85,38 @@ a, a.active, a:active, a:focus, a:hover {
 /* ===============
    Navigation
    =============== */
-.navbar-custom {
-    background: #000033;
-    background: url('../images/navbarbanner5.png') no-repeat center bottom;
-    background-position: -375px;
+/*blue: #000033;*/
+/*red: #F44336*/
+/*other: #9c0c00*/
 
+#mainNav {
+    background: linear-gradient(45deg, #9c0c00 33%, white 20%, white 35%, #000033 33%);
 }
 
-.navbar-custom .navbar-nav li a:hover {
-    color: #F44336
+.affix .navbar-brand {
+    top: 0px;
+    left: 20px;
 }
 
-@media (min-width: 768px) {
-    .navbar-custom {
-        /*background-position: -360px;*/
-        background-position: -255px;
-    }
-}
 
-@media (min-width: 1530px) {
-    .navbar-custom {
-        background-position: 0px;
-    }
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 14px;
 }
 
 @media (max-width: 768px) {
-    .navbar-header.page-scroll {
-        padding-bottom: 9px;
+    .navbar-brand {
+        left: -9px;
+        top: -10px;
     }
 }
 
-.navbar-custom .navbar-toggle {
-    color: #fff;
-    border-color: #fff;
-}
-
-.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:hover {
-    background-color: #9c0c00;
-    color: #fff;
-    border-color: #fff;
-}
 
 /* ---------------
    Collapse
@@ -177,6 +131,10 @@ a, a.active, a:active, a:focus, a:hover {
 /* ===============
    Carousel
    =============== */
+
+.carousel-inner > .item > img {
+    object-fit: cover
+}
 
 .carousel-caption {
     text-align: center;
@@ -205,8 +163,9 @@ section#carousel {
 .carousel-inner > .item > img {
     height: 600px;
     width: auto;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 .carousel-inner {
     width: fit-content;
     margin: 0 auto;
@@ -241,7 +200,7 @@ section#carousel {
     background: #f5f5dc;
 } */
 
-.thumbnail div#aboutus{
+.thumbnail div#aboutus {
     color: white;
     background-color: #bb4430;
 }
@@ -353,30 +312,28 @@ section#sections h2 {
 
 /*SPONSORS*/
 
-section#sponsors{
+section#sponsors {
     background-color: #e6e6e6;
 }
 
 /*CONTACT*/
 
-section#contact{
+section#contact {
     background: #FFFFFF;
 }
 
-@media (min-width: 320px){
-    .wpcf7 form input[type=text], .wpcf7 form input[type=email], .wpcf7 form textarea  {
+@media (min-width: 320px) {
+    .wpcf7 form input[type=text], .wpcf7 form input[type=email], .wpcf7 form textarea {
         width: 280px;
     }
 }
 
-@media (min-width: 420px){
-    
-    .wpcf7 form input[type=text], .wpcf7 form input[type=email], .wpcf7 form textarea  {
+@media (min-width: 420px) {
+
+    .wpcf7 form input[type=text], .wpcf7 form input[type=email], .wpcf7 form textarea {
         width: 418px;
     }
 }
-
-
 
 
 .floating-label-form-group {
@@ -418,29 +375,28 @@ blockquote {
 }
 
 @media (min-width: 0px) {
-    #notice-message{
+    #notice-message {
         padding-left: 10px;
         padding-right: 10px;
     }
 }
 
 @media (min-width: 320px) {
-    #notice-message{
+    #notice-message {
         padding-left: 50px;
         padding-right: 50px;
     }
 }
+
 @media (min-width: 768px) {
-    #notice-message{
+    #notice-message {
         padding-left: 168px;
         padding-right: 168px;
     }
 }
 
 
-
-
 #myCarousel .item {
-    border: none!important;
-    margin: unset!important;
+    border: none !important;
+    margin: unset !important;
 }
