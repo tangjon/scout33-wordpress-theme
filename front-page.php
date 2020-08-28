@@ -19,71 +19,71 @@ get_header(); ?>
 
     <!--Images from CACHE-->
     <section id="carousel">
-
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <?php
-                $counter = 0;
-                $args = array('category' => 30, 'post_type' =>  'post');
-                $catPost = get_posts($args); //change this
-                foreach ($catPost as $post) : setup_postdata($post); ?>
-                    <li data-target="#myCarousel" data-slide-to="<?php echo $counter; ?>" class="active"></li>
-                    <?php $counter++; ?>
-                <?php endforeach; ?>
-            </ol>
+
+
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-
                 <?php
-                $counter = 0;
-                $args = array('category' => 30, 'post_type' =>  'post');
-                $catPost = get_posts($args); //change this
-                foreach ($catPost as $post) : setup_postdata($post); ?>
+                $i = 0;
+                $ids = the_featured_image_gallery();
+                foreach($ids as $image_id){
+                    $image = get_post($image_id);
+                    $image_title = $image->post_title;
+                    $image_caption = $image->post_excerpt;
+                    if ($i == 0){
+                        echo '<div class="item active">';
+                    } else {
+                        echo '<div class="item">';
+                    }
+                    echo wp_get_attachment_image($image_id, $size='medium ', $attr=["class" => "d-block w-100"]) .
+                        '<div class="carousel-caption">' .
+                        '<h3>' .
+                        $image_title .
+                        '</h3>'.
+                        '<p>' .
+                        $image_caption .
+                        '</p>'.
+                        '</div>' .
+                        '</div>';
+                    $i++;
 
-                    <?php if ($counter == 0) : ?>
-                        <div class='item active'>
-                        <?php else : ?>
-                            <div class='item'>
-                            <?php endif; ?>
-                            <?php $counter++ ?>
-                            <?php the_post_thumbnail('full') ?>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3><?php the_title(); ?></h3>
-                                <p><?php the_content(); ?></p>
-                            </div>
-                            </div>
-
-                        <?php endforeach; ?>
-                        </div>
-
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                            <div class="myarrow">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </div>
-
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                            <div class="myarrow">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </div>
-                        </a>
+                }
+                ?>
             </div>
+            <!-- Indicators -->
+
+            <ol class="carousel-indicators">
+                <?php for($j = 0; $j < $i; ++$j) {
+                    if ($j == 0) {
+                        echo '<li data-target="#myCarousel" data-slide-to="0" class="active"></li>';
+                    } else {
+                        echo '<li data-target="#myCarousel" data-slide-to="' .
+                            $j .
+                            'class="active"></li>';
+                    }
+                }?>
+            </ol>
     </section>
 
     <?php
-    $notice = get_theme_mod('scout33_notice_msg_setting', '');
+    $notice = get_theme_mod('notice_msg_setting', '');
     if (!empty($notice)) :
     ?>
         <section id="notice-strip">
             <div class="container">
                 <div id="notice-message" class="row text-left">
                     <h1 style="">Notice :</h1>
-                    <!-- <p>1. Some sections are still accepting members</p>     -->
                     <p><?php echo $notice ?></p>
                 </div>
             </div>
@@ -233,9 +233,8 @@ get_header(); ?>
                         </div>
                         <div class="thumbnail">
                             <div id="report" class="caption ">
-                                <a href="<?php bloginfo('template_url'); ?>/files/2019-Annual-Report.pdf">SEE OUR ANNUAL REPORT</a>
+                                <a href="<?php echo esc_url( get_theme_mod( 'annual_report_setting' ) ); ?>">SEE OUR ANNUAL REPORT</a>
                                 <span class="glyphicon glyphicon-file"></span>
-
                             </div>
                         </div>
 

@@ -16,39 +16,56 @@ function tangyjon_customize_register($wp_customize)
     $wp_customize->get_setting('blogdescription')->transport = 'postMessage';
     $wp_customize->get_setting('header_textcolor')->transport = 'postMessage';
 
-    // $wp_customize->add_setting('notice_msg', array(
-    // 	'default' => 'nothing to see here',
-    // 	'transport' => 'refresh'
-    // ));
-    $wp_customize->add_setting('scout33_notice_msg_setting', array(
+
+
+    // GALLERY SECTION =====
+
+    $wp_customize->add_section('gallery-section', array(
+        'title' => __('Gallery'),
+    ));
+
+    $wp_customize->add_setting('gallery-section-settings', array(
+        'default' => array()
+    ));
+
+   $wp_customize->add_control( new CustomizeImageGalleryControl\Control(
+        $wp_customize,
+        'gallery_control',
+        array(
+            'label'    => __( 'Image Gallery Field Label' ),
+            'section'  => 'gallery-section',
+            'settings' => 'gallery-section-settings',
+            'type'     => 'image_gallery',
+        )
+    ) );
+
+
+    // NOTICE SECTION =====
+    $wp_customize->add_setting('notice_msg_setting', array(
         'capability' => 'edit_theme_options',
         'default' => 'Lorem Ipsum'
     ));
 
-    // NOTICE SECTION
     $wp_customize->add_section('notice_msg_section', array(
         'title' => 'Notice Message',
-        'prority' => 1000
     ));
 
-    $wp_customize->add_control('scout33_notice_msg_setting', array(
+    $wp_customize->add_control('notice_msg_control', array(
         'type' => 'textarea',
-        'section' => 'notice_msg_section', // Add a default or your own section
+        'settings' => 'notice_msg_setting',
+        'section' => 'notice_msg_section',
         'label' => __('Notice Message Box'),
         'description' => __('This message will display on the front page'),
+        'priority' => 29
     ));
 
 
-    // SPONSOR SECTION
+    // SPONSOR SECTION =====
 
-    // Add Section
     $wp_customize->add_section('sponsor-image', array(
         'title' => __('Sponsor Image'),
-        'priority' => 900,
     ));
 
-
-    // Add settings
     $wp_customize->add_setting('sponsor_image_setting', array(
         'default' => ''
     ));
@@ -56,8 +73,6 @@ function tangyjon_customize_register($wp_customize)
     $wp_customize->add_setting('sponsor_image_title_setting', array(
         'default' => ''
     ));
-
-    // Add Controls
 
     $wp_customize->add_control(new WP_Customize_Control(
             $wp_customize,
@@ -75,6 +90,23 @@ function tangyjon_customize_register($wp_customize)
         'label' => __('Sponsor Image', 'name-theme'),
         'section' => 'sponsor-image',
         'settings' => 'sponsor_image_setting',
+    )));
+
+
+    // ANNUAL REPORT =====
+    $wp_customize->add_section('annual_report_section', array(
+        'title'             => __('Annual Report', 'name-theme'),
+        'priority'          => 10000,
+    ));
+
+    $wp_customize->add_setting('annual_report_setting', array(
+        'transport'         => 'refresh'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, 'customizer_setting_pdf', array(
+        'label'             => __('PDF Upload', 'name-theme'),
+        'section'           => 'annual_report_section',
+        'settings'          => 'annual_report_setting',
     )));
 
 

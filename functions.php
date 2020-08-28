@@ -194,6 +194,14 @@ function pull_content($content) {
 
 }
 
+function the_featured_image_gallery( $atts = array() ) {
+    $setting_id = 'gallery-section-settings';
+    $ids_array = get_theme_mod( $setting_id );
+    if ( is_array( $ids_array ) && ! empty( $ids_array ) ) {
+        return $ids_array;
+    }
+}
+add_action('the_featured_image_gallery', 'the_featured_image_gallery');
 /**
  * Implement the Custom Header feature.
  */
@@ -213,11 +221,6 @@ require get_template_directory() . '/inc/extras.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Notice Message.
- */
-require get_template_directory() . '/inc/custom-notice-message.php';
 
 /**
  * Load Jetpack compatibility file.
