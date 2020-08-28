@@ -93,11 +93,25 @@ a, a.active, a:active, a:focus, a:hover {
     background: linear-gradient(45deg, #9c0c00 33%, white 20%, white 35%, #000033 33%);
 }
 
-.affix .navbar-brand {
-    top: 0px;
-    left: 20px;
+
+@media (max-width: 768px) {
+    #mainNav {
+        background: linear-gradient(45deg, #9c0c00 72%, white 70%, white 75%, #000033 75%);
+    }
 }
 
+@media (min-width: 769px) {
+    .affix .navbar-brand {
+        top: 0;
+        left: 20px;
+    }
+}
+
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:hover {
+    background-color: #9c0c00;
+    color: #fff;
+    border-color: #9c0c00;
+}
 
 .navbar-brand {
     float: left;
@@ -156,13 +170,13 @@ a, a.active, a:active, a:focus, a:hover {
 }
 
 section#carousel {
-    padding-top: 67px;
-    padding-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 0
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     section#carousel {
-        padding-top: 0;
+        padding-top: 98px;
         padding-bottom: 0;
     }
 }
@@ -407,3 +421,5 @@ blockquote {
     border: none !important;
     margin: unset !important;
 }
+
+
