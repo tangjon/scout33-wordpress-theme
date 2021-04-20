@@ -68,11 +68,82 @@
     <?php endif; ?>
 
 
+    <section id="quick-strip">
+        <div class="container">
+            <div class="row">
+                <!-- Calendar -->
+                <div class="col-sm-6 col-md-4">
+                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/calendar/">
+                        <div class="card">
+                            <div id="calendar" class="thumbnail">
+                                <div class="cardicon">
+                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                </div>
+                                <div class="caption">
+                                    <h3>Calendar</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Form -->
+                <div class="col-sm-6 col-md-4">
+                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/form/">
+                        <div class="card">
+                            <div id="form" class="thumbnail">
+                                <div class="cardicon">
+                                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                                </div>
+                                <div class="caption">
+                                    <h3>Forms</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Social Media -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="card">
+                        <div id="connect" class="thumbnail">
+                            <div class="caption">
+                                <h3>Connect</h3>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i class="fa fa-fw fa-envelope"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" class="btn-social btn-outline"><span class="sr-only">Youtube</span><i class="fa fa-fw fa-youtube"></i></a>
+                                    </li </ul> </div> </div> </div> </div> <!-- Resources -->
+                <div class="col-sm-6 col-md-4">
+                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
+                        <div class="card">
+                            <div id="plus" class="thumbnail">
+                                <div class="cardicon">
+                                    <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
+                                </div>
+                                <div class="caption">
+                                    <h3>Resources</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="about">
         <img id="about-img" src="<?php bloginfo('template_url'); ?>/images/about-background">
         <div id="about-content">
             <div id="about-title" class="section-title">About Us</div>
-            <div class="section-body">We are a sized Scouting group proud to be a part of the country’s largest youth
+            <div class="section-body">We are the <u>33rd Kerrisdale Scout Group</u>, a sized Scouting group proud to be a part of the country’s largest youth
                 driven organization, Scouts Canada. We strive to lead youth in discovering new
                 experiences where they would not else where, such as camping, water-sports, hiking,
                 and much more!
@@ -83,8 +154,37 @@
                 best in others. Dollar for dollar, our programs provide significant value. They run
                 all year round and offer adventures that youth will remember for a lifetime!
             </div>
+
+            <div id="mission-statement">
+                <div id="about-title" class="section-title mt-4">Our Mission Statement</div>
+                <div class="section-body">
+                    The 33rd Group emphasizes the importance of life outside the classroom. Our mission is leadership development. We want to graduate motivated learners, problem solvers, effective communicators and responsible young adults who are ready to make a real difference to the community.
+                </div>
+            </div>
         </div>
 
+    </section>
+
+    <section id="meeting-schedule">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-sm text-center">
+                    <i class="far fa-calendar-alt" style="font-size: 16em"></i>
+                </div>
+                <div id="schedule" class="col-sm">
+                    <h3>Meeting Schedule</h3>
+                    <hr>
+                    <h4>BEAVERS</h4>
+                    <p>12:30PM to 1:30PM</p>
+                    <hr>
+                    <h4>CUBS, SCOUTS, VENTURERS</h4>
+                    <p>2:00PM to 4:30PM</p>
+                    <hr>
+                    <h4>Badge Testing</h4>
+                    <p>1:30PM</p>
+                </div>
+            </div>
+        </div>
     </section>
     <header id="abouts">
         <div  id="maincontent" tabindex="-1">
