@@ -7,7 +7,7 @@ body.home.blog.logged-in.admin-bar.hfeed.customize-support {
     background-color: white;
 }
 
-h2, h5{
+h1, h2, h5{
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700!important;
@@ -351,4 +351,48 @@ div#quick-connect {
 
 #page{
     background-color: #f3dfa2;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-content {
+    background-color: #f5f5dc;
+    padding: 15px;
+    margin-right: 15px;
+    flex: 2 1;
+
+}
+
+.sidebar {
+    flex: 1 2;
+}
+
+ a {
+    color: #F44336;
+}
+
+.sidebar {
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    background: #000033;
+    color: white;
+    padding: 15px 12px 12px;
+    list-style: none;
+}
+
+
+.widget-area{
+    text-decoration: none;
+}
+
+.entry-title {
+    text-align: center;
+    background-color: #9c0c00;
+    color: white;
+}
+
+.entry-content {
+    padding: 32px 40px;
 }
