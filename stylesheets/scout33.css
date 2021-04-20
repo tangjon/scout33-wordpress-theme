@@ -4,7 +4,7 @@ body {
 }
 
 body.home.blog.logged-in.admin-bar.hfeed.customize-support {
-    background-color: #969696;
+    background-color: white;
 }
 
 h2{
@@ -76,6 +76,14 @@ nav.navbar {
 }
 
 /*CAROUSEL*/
+
+button.carousel-control-next:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+button.carousel-control-prev:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
 .carousel-item > img {
     height: 1000px;
     width: auto;
