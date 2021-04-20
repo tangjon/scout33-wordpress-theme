@@ -77,7 +77,7 @@
                         <div class="card">
                             <div id="calendar" class="thumbnail">
                                 <div class="cardicon">
-                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                    <span class="fas fa-calendar-alt" aria-hidden="true"></span>
                                 </div>
                                 <div class="caption">
                                     <h3>Calendar</h3>
@@ -93,7 +93,7 @@
                         <div class="card">
                             <div id="form" class="thumbnail">
                                 <div class="cardicon">
-                                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                                    <span class="fas fa-list-alt" aria-hidden="true"></span>
                                 </div>
                                 <div class="caption">
                                     <h3>Forms</h3>
@@ -108,21 +108,20 @@
                         <div id="connect" class="thumbnail">
                             <div class="caption">
                                 <h3>Connect</h3>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span
-                                                    class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span
-                                                    class="sr-only">Mail</span><i class="fa fa-fw fa-envelope"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA"
-                                           class="btn-social btn-outline"><span class="sr-only">Youtube</span><i
-                                                    class="fa fa-fw fa-youtube"></i></a>
-                                    </li
-                                </ul>
+                                <!-- Facebook -->
+                                <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/33ScoutGroup/" role="button"
+                                ><i class="fab fa-facebook-f"></i
+                                    ></a>
+
+
+                                <a class="btn btn-primary" style="background-color: #ed302f;" href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" role="button"
+                                ><i class="fab fa-youtube"></i
+                                    ></a>
+
+                                <!-- Youtube -->
+                                <a class="btn btn-primary" style="background-color: #333333;" href="mailto:info@scout33.org" role="button"
+                                ><i class="fas fa-envelope"></i
+                                    ></a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +131,7 @@
                         <div class="card">
                             <div id="plus" class="thumbnail">
                                 <div class="cardicon">
-                                    <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
+                                    <span class="fas fa-plus"></span>
                                 </div>
                                 <div class="caption">
                                     <h3>Resources</h3>

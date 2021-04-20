@@ -37,7 +37,7 @@
                         ></a>
 
                     <!-- Youtube -->
-                    <a class="btn btn-primary" style="background-color: #333333;" href="#!" role="button"
+                    <a class="btn btn-primary" style="background-color: #333333;" href="mailto:info@scout33.org" role="button"
                     ><i class="fas fa-envelope"></i
                         ></a>
                 </div>
