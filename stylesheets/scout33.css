@@ -36,6 +36,37 @@ hr.star-light, hr.star-primary {
 
 /*MENU*/
 
+
+.tagline {
+    line-height: 4px;
+}
+
+a#sct-navbar-brand {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 19px;
+    background-color: #000033;
+}
+
+#sct-nav {
+    padding: 0 0;
+}
+
+/*div#navbarNavAltMarkup {*/
+/*    background-color: #000033;*/
+/*}*/
+
+@media (max-width: 700px) {
+    a#sct-navbar-brand {
+        font-size: 23px;
+    }
+}
+
+button#nav-toggle-button {
+    margin: 5px;
+    margin-right: 29;
+}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

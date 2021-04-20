@@ -23,9 +23,8 @@
 
 <?php if (is_front_page()) ?>
 
-<nav class="navbar navbar-expand-md sticky-top d-flex" id="sct-nav">
-    <div class="container-fluid">
-        <a class=" navbar-brand" id="sct-navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+<nav class="navbar navbar-expand-md sticky-top d-flex justify-content-between" id="sct-nav">
+        <a class=" navbar-brand" id="sct-navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?><div class="tagline" style="font-size: 15px">Scouting Group</div></a>
         <button  id="nav-toggle-button" class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -46,7 +45,6 @@
             );
             ?>
         </div>
-    </div>
 </nav>
 
 
