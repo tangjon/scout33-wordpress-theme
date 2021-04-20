@@ -7,6 +7,12 @@ body.home.blog.logged-in.admin-bar.hfeed.customize-support {
     background-color: #969696;
 }
 
+h2{
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700!important;
+}
+
 /*MAIN*/
 #main-container {
     padding: 0 0;
@@ -212,4 +218,17 @@ img#section-logo {
 #contact{
     color: black;
     background-color: white;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #000033;
+    padding: 60px 0;
+    color: white;
+}
+
+#footer-social{
+    display: flex;
+    justify-content: space-evenly;
 }
