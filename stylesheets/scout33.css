@@ -187,3 +187,14 @@ img#section-logo {
     height: 155px;
     padding-top: 13px;
 }
+
+/*SPONSOR SECTION*/
+
+#sponsor-img {
+    width:100%
+}
+
+#sponsors {
+    color: black;
+    background-color: #e6e6e6;
+}

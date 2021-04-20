@@ -110,14 +110,23 @@
                                 <h3>Connect</h3>
                                 <ul class="list-inline">
                                     <li>
-                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span
+                                                    class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
                                     </li>
                                     <li>
-                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i class="fa fa-fw fa-envelope"></i></a>
+                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span
+                                                    class="sr-only">Mail</span><i class="fa fa-fw fa-envelope"></i></a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" class="btn-social btn-outline"><span class="sr-only">Youtube</span><i class="fa fa-fw fa-youtube"></i></a>
-                                    </li </ul> </div> </div> </div> </div> <!-- Resources -->
+                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA"
+                                           class="btn-social btn-outline"><span class="sr-only">Youtube</span><i
+                                                    class="fa fa-fw fa-youtube"></i></a>
+                                    </li
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Resources -->
                 <div class="col-sm-6 col-md-4">
                     <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
                         <div class="card">
@@ -143,7 +152,8 @@
         <img id="about-img" src="<?php bloginfo('template_url'); ?>/images/about-background">
         <div id="about-content">
             <div id="about-title" class="section-title">About Us</div>
-            <div class="section-body">We are the <u>33rd Kerrisdale Scout Group</u>, a sized Scouting group proud to be a part of the country’s largest youth
+            <div class="section-body">We are the <u>33rd Kerrisdale Scout Group</u>, a sized Scouting group proud to be
+                a part of the country’s largest youth
                 driven organization, Scouts Canada. We strive to lead youth in discovering new
                 experiences where they would not else where, such as camping, water-sports, hiking,
                 and much more!
@@ -158,7 +168,9 @@
             <div id="mission-statement">
                 <div id="about-title" class="section-title mt-4">Our Mission Statement</div>
                 <div class="section-body">
-                    The 33rd Group emphasizes the importance of life outside the classroom. Our mission is leadership development. We want to graduate motivated learners, problem solvers, effective communicators and responsible young adults who are ready to make a real difference to the community.
+                    The 33rd Group emphasizes the importance of life outside the classroom. Our mission is leadership
+                    development. We want to graduate motivated learners, problem solvers, effective communicators and
+                    responsible young adults who are ready to make a real difference to the community.
                 </div>
             </div>
         </div>
@@ -190,7 +202,8 @@
         <div class="container">
             <div class="row d-flex">
                 <div class="col-sm d-flex justify-content-center">
-                    <a id="annual-report-btn" href="<?php echo esc_url(get_theme_mod('annual_report_setting')); ?>">SEE OUR ANNUAL
+                    <a id="annual-report-btn" href="<?php echo esc_url(get_theme_mod('annual_report_setting')); ?>">SEE
+                        OUR ANNUAL
                         REPORT</a>
                     <span class="glyphicon glyphicon-file"></span>
                 </div>
@@ -321,17 +334,11 @@
     </section>
 
     <section id="sponsors">
-        <div class="">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2><?php echo(get_theme_mod('sponsor_image_title_setting')); ?></h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row text-center">
-                <img src="<?php echo esc_url(get_theme_mod('sponsor_image_setting')); ?>" alt="sponsors"
-                     class="img-responsive">
-            </div>
+        <div class="container text-center">
+            <div class="section-title"><?php echo(get_theme_mod('sponsor_image_title_setting')); ?></div>
+            <hr class="star-primary">
+            <img id="sponsor-img" src="<?php echo esc_url(get_theme_mod('sponsor_image_setting')); ?>" alt="sponsors"
+                 class="img-responsive">
         </div>
     </section>
 
