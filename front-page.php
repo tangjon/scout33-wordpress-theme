@@ -67,83 +67,60 @@
         </section>
     <?php endif; ?>
 
-
     <section id="quick-strip">
-        <div class="container">
-            <div class="row">
-                <!-- Calendar -->
-                <div class="col-sm-6 col-md-4">
-                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/calendar/">
-                        <div class="card">
-                            <div id="calendar" class="thumbnail">
-                                <div class="cardicon">
-                                    <span class="fas fa-calendar-alt" aria-hidden="true"></span>
-                                </div>
-                                <div class="caption">
-                                    <h3>Calendar</h3>
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Form -->
-                <div class="col-sm-6 col-md-4">
-                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/form/">
-                        <div class="card">
-                            <div id="form" class="thumbnail">
-                                <div class="cardicon">
-                                    <span class="fas fa-list-alt" aria-hidden="true"></span>
-                                </div>
-                                <div class="caption">
-                                    <h3>Forms</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Social Media -->
-                <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                        <div id="connect" class="thumbnail">
-                            <div class="caption">
-                                <h3>Connect</h3>
-                                <!-- Facebook -->
-                                <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/33ScoutGroup/" role="button"
-                                ><i class="fab fa-facebook-f"></i
-                                    ></a>
-
-
-                                <a class="btn btn-primary" style="background-color: #ed302f;" href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" role="button"
-                                ><i class="fab fa-youtube"></i
-                                    ></a>
-
-                                <!-- Youtube -->
-                                <a class="btn btn-primary" style="background-color: #333333;" href="mailto:info@scout33.org" role="button"
-                                ><i class="fas fa-envelope"></i
-                                    ></a>
-                            </div>
-                        </div>
+        <div id="quick-content" class="d-flex justify-content-center flex-wrap">
+            <a id="quick-calendar" class="quick-link" href="http://www.scout33.org/calendar/">
+                <div class="card" style="width: 18rem;">
+                    <div class="fas fa-calendar-alt quick-icon"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Calendar</h5>
+                        <p class="card-text">Upcoming and past events</p>
                     </div>
-                </div> <!-- Resources -->
-                <div class="col-sm-6 col-md-4">
-                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
-                        <div class="card">
-                            <div id="plus" class="thumbnail">
-                                <div class="cardicon">
-                                    <span class="fas fa-plus"></span>
-                                </div>
-                                <div class="caption">
-                                    <h3>Resources</h3>
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
                 </div>
+            </a>
 
+
+            <a id="quick-resources" class="quick-link" href="http://www.scout33.org/resources/">
+                <div class="card" style="width: 18rem;">
+                    <div class="fas fa-plus quick-icon"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Resources</h5>
+                        <p class="card-text">Helpful resources</p>
+                    </div>
+                </div>
+            </a>
+            <a id="quick-forms" class="quick-link" href="http://www.scout33.org/form/">
+                <div class="card" style="width: 18rem;">
+                    <div class="fas fa-list-alt quick-icon"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Files and Forms</h5>
+                        <p class="card-text">Permission forms</p>
+                    </div>
+                </div>
+            </a>
+
+            <div id="quick-connect" class="card" style="width: 18rem;">
+                <div id="quick-social-links">
+                    <a class="btn btn-primary"
+                       href="https://www.facebook.com/33ScoutGroup/" role="button"
+                    ><i class="fab fa-facebook-f"></i
+                        ></a>
+
+
+                    <a class="btn btn-primary"
+                       href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" role="button"
+                    ><i class="fab fa-youtube"></i
+                        ></a>
+
+                    <!-- Youtube -->
+                    <a class="btn btn-primary"  href="mailto:info@scout33.org"
+                       role="button"
+                    ><i class="fas fa-envelope"></i
+                        ></a>
+                </div>
+                <h5 class="card-title mt-2">Connect</h5>
             </div>
+
         </div>
     </section>
 
