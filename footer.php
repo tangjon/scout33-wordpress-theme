@@ -11,9 +11,7 @@
 
 ?>
 
-<!-- #content -->
-
-<footer class="text-center">
+<footer id="sct-footer"  class="text-center">
     <div class="footer-above">
         <div class="container">
             <div class="row">

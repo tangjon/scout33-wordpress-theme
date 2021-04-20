@@ -337,7 +337,7 @@ div#quick-connect {
 
 /*FOOTER*/
 
-footer {
+#sct-footer {
     background-color: #000033;
     padding: 60px 0;
     color: white;
@@ -346,4 +346,9 @@ footer {
 #footer-social{
     display: flex;
     justify-content: space-evenly;
+}
+
+
+#page{
+    background-color: #f3dfa2;
 }

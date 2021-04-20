@@ -119,6 +119,16 @@ function scout33_scripts_styles(){
     wp_enqueue_script( 'bootjs','https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js', array( 'jquery' ),'',true );
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
+
+
+//    if( is_front_page() ){
+//        wp_enqueue_style( 'scout33-style', get_stylesheet_uri() );
+//    }
+//    else {
+//        wp_enqueue_style( 'twentyseventeen-block-style', get_theme_file_uri( '/assets/css/blocks.css' ), array( 'twentyseventeen-style' ), '20190105' );
+
+//        wp_enqueue_style( 'blog-style', get_template_directory_uri()  . '/stylesheets/blog-style.css');
+//    }
 }
 add_action( 'wp_enqueue_scripts', 'scout33_scripts_styles' );
 
@@ -139,64 +149,6 @@ function add_additional_class_on_li($classes, $item, $args) {
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
-
-
-function tangyjon_scripts() {
-
-
-	wp_enqueue_script( 'tangyjon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'tangyjon-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-
-
-
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-// add_action( 'wp_enqueue_scripts', 'tangyjon_scripts' );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// LOAD STYLES
-function tangyjon_styles(){
-    wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css');
-
-    wp_enqueue_style('freelancer', get_template_directory_uri() . '/stylesheets/freelancer.min.css');
-
-    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
-
-	wp_enqueue_style('scout33', get_template_directory_uri() . '/stylesheets/scout33.css');
-
-
-     if( is_front_page() ){
-         wp_enqueue_style( 'tangyjon-style', get_stylesheet_uri() );
-     }
-     else {
-         wp_enqueue_style( 'blog-style', get_template_directory_uri()  . '/stylesheets/blog-style.css');
-     }
-}
-// add_action( 'wp_enqueue_scripts', 'tangyjon_styles' );
-
-// LOAD JQUERY
-function load_jquery(){
-    wp_deregister_script('jquery');
-    wp_enqueue_script('jquery',  get_stylesheet_directory_uri() . '/vendor/jquery/jquery.min.js', array(), null, true);
-}
-// add_action( 'wp_enqueue_scripts', 'load_jquery' );
 
 // LOAD JAVA SCRIPT
 function wpbootstrap_scripts_with_jquery()
