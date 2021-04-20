@@ -15,7 +15,7 @@
                 } else {
                     echo '<div class="carousel-item">';
                 }
-                echo wp_get_attachment_image($image_id, $size = 'medium ', "", array('class' => "d-block mx-auto")) .
+                echo wp_get_attachment_image($image_id, $size = 'medium ', "", array('class' => "d-block mx-auto img-fluid")) .
                     '<div class="carousel-caption">' .
                     '<h3>' .
                     $image_title .

@@ -23,10 +23,11 @@
 
 <?php if (is_front_page()) ?>
 
-<nav class="navbar navbar-expand-md sticky-top" id="sct-nav">
+<nav class="navbar navbar-expand-md sticky-top d-flex" id="sct-nav">
     <div class="container-fluid">
-        <a class="navbar-brand" id="sct-navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class=" navbar-brand" id="sct-navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+        <button  id="nav-toggle-button" class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -37,18 +38,16 @@
                     'menu_id' => 'primary-menu',
                     'theme_location' => 'primary',
                     'depth' => 1,
-                    'container_class'=>'mx-auto',
+                    'container_class' => '',
                     'menu_class' => 'navbar-nav',
                     'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                    'link_class'   => 'nav-link',
+                    'link_class' => 'nav-link',
                     'walker' => new WP_Bootstrap_Navwalker())
             );
             ?>
         </div>
     </div>
 </nav>
-
-
 
 
 </body>
