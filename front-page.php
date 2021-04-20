@@ -125,7 +125,7 @@
     </section>
 
     <section id="about">
-        <img id="about-img" src="<?php bloginfo('template_url'); ?>/images/about-background">
+        <img id="about-img" src="<?php bloginfo('template_url'); ?>/images/about-background.png">
         <div id="about-content">
             <div id="about-title" class="section-title">About Us</div>
             <div class="section-body">We are the <u>33rd Kerrisdale Scout Group</u>, a sized Scouting group proud to be
