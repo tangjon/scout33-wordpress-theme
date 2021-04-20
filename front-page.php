@@ -69,10 +69,10 @@
 
 
     <section id="about">
-<!--        <img id="about-img" src="--><?php //bloginfo('template_url'); ?><!--/images/about-background">-->
-        <div id="about-text">
-            <h1>About Us</h1>
-            <div>We are a sized Scouting group proud to be a part of the country’s largest youth
+        <img id="about-img" src="<?php bloginfo('template_url'); ?>/images/about-background">
+        <div id="about-content">
+            <div id="about-title" class="section-title">About Us</div>
+            <div class="section-body">We are a sized Scouting group proud to be a part of the country’s largest youth
                 driven organization, Scouts Canada. We strive to lead youth in discovering new
                 experiences where they would not else where, such as camping, water-sports, hiking,
                 and much more!
