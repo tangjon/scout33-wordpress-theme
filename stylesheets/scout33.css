@@ -7,6 +7,20 @@ body.home.blog.logged-in.admin-bar.hfeed.customize-support{
     background-color: #969696;
 }
 
+/*MAIN*/
+#main-container {
+    padding: 0 0;
+}
+
+@media (min-width: 2561px) {
+    .container-fluid{
+        max-width: 2400px;
+    }
+}
+
+
+/*MENU*/
+
 #primary-menu, #sct-navbar-brand {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -40,10 +54,39 @@ nav.navbar {
 
 /*CAROUSEL*/
 .carousel-item > img {
-    height: 600px;
+    height: 1000px;
     width: auto;
 }
 
 div#sct-carousel-indicator {
     background-color: #9c0c00;
+}
+
+/*SECTION*/
+section {
+    color: white;
+    padding: 50px 0;
+}
+
+/*NOTICE STRIP*/
+#notice-strip{
+    background-color: #9c0c00;
+}
+
+/*ABOUT*/
+section#about {
+    padding: 0 0;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+section#about-img {
+    max-height: 300px;
+}
+
+section#about-text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }

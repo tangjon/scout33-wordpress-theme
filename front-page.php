@@ -1,85 +1,62 @@
-<?php
+<div id="main-container" class="container-fluid">
+    <?php get_header(); ?>
 
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package tangyjon
- */
-
-get_header(); ?>
-
-<div id="container">
-
-    <!--Images from CACHE-->
-    <section id="carousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <?php
-                $i = 0;
-                $ids = the_featured_image_gallery();
-                foreach($ids as $image_id){
-                    $image = get_post($image_id);
-                    $image_title = $image->post_title;
-                    $image_caption = $image->post_excerpt;
-                    if ($i == 0){
-                        echo '<div class="item active">';
-                    } else {
-                        echo '<div class="item">';
-                    }
-                    echo wp_get_attachment_image($image_id, $size='medium ', $attr=["class" => "d-block w-100"]) .
-                        '<div class="carousel-caption">' .
-                        '<h3>' .
-                        $image_title .
-                        '</h3>'.
-                        '<p>' .
-                        $image_caption .
-                        '</p>'.
-                        '</div>' .
-                        '</div>';
-                    $i++;
-
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <?php
+            $i = 0;
+            $ids = the_featured_image_gallery();
+            foreach ($ids as $image_id) {
+                $image = get_post($image_id);
+                $image_title = $image->post_title;
+                $image_caption = $image->post_excerpt;
+                if ($i == 0) {
+                    echo '<div class="carousel-item active">';
+                } else {
+                    echo '<div class="carousel-item">';
                 }
-                ?>
-            </div>
-            <!-- Indicators -->
+                echo wp_get_attachment_image($image_id, $size = 'medium ', "", array('class' => "d-block mx-auto")) .
+                    '<div class="carousel-caption">' .
+                    '<h3>' .
+                    $image_title .
+                    '</h3>' .
+                    '<p>' .
+                    $image_caption .
+                    '</p>' .
+                    '</div>' .
+                    '</div>';
+                $i++;
 
-            <ol class="carousel-indicators">
-                <?php for($j = 0; $j < $i; ++$j) {
-                    if ($j == 0) {
-                        echo '<li data-target="#myCarousel" data-slide-to="0" class="active"></li>';
-                    } else {
-                        echo '<li data-target="#myCarousel" data-slide-to="' .
-                            $j .
-                            'class="active"></li>';
-                    }
-                }?>
-            </ol>
-    </section>
+            }
+            ?>
+        </div>
+        <div class="carousel-indicators">
+            <?php for ($j = 0; $j < $i; ++$j) {
+                if ($j == 0) {
+                    echo '<button data-bs-target="#sct-carousel-indicator" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>';
+                } else {
+                    echo '<button data-bs-target="#sct-carousel-indicator" data-bs-slide-to="' . $j . '" aria-label="Slide ' . $j . '"></button>';
+                }
+            } ?>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
 
     <?php
     $notice = get_theme_mod('notice_msg_setting', '');
     if (!empty($notice)) :
-    ?>
+        ?>
         <section id="notice-strip">
             <div class="container">
                 <div id="notice-message" class="row text-left">
@@ -91,83 +68,30 @@ get_header(); ?>
     <?php endif; ?>
 
 
-    <section id="quick-strip">
-        <div class="container">
-            <div class="row">
-                <!-- Calendar -->
-                <div class="col-sm-6 col-md-4">
-                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/calendar/">
-                        <div class="card">
-                            <div id="calendar" class="thumbnail">
-                                <div class="cardicon">
-                                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                                </div>
-                                <div class="caption">
-                                    <h3>Calendar</h3>
+    <section id="about">
+<!--        <img id="about-img" src="--><?php //bloginfo('template_url'); ?><!--/images/about-background">-->
+        <div id="about-text">
+            <h1>About Us</h1>
+            <div>We are a sized Scouting group proud to be a part of the country’s largest youth
+                driven organization, Scouts Canada. We strive to lead youth in discovering new
+                experiences where they would not else where, such as camping, water-sports, hiking,
+                and much more!
+                <br><br>Scouts have a lot of fun discovering new things and experiences they
+                wouldn’t have elsewhere. Along the way they develop into capable, confident and
+                well-rounded individuals, better prepared for success in the world.
+                <br><br>Scouting offers a world where you can discover the best in yourself and the
+                best in others. Dollar for dollar, our programs provide significant value. They run
+                all year round and offer adventures that youth will remember for a lifetime!
+            </div>
+        </div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Form -->
-                <div class="col-sm-6 col-md-4">
-                    <a id="ghost" class="hvr-grow" href="http://www.scout33.org/form/">
-                        <div class="card">
-                            <div id="form" class="thumbnail">
-                                <div class="cardicon">
-                                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-                                </div>
-                                <div class="caption">
-                                    <h3>Forms</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- Social Media -->
-                <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                        <div id="connect" class="thumbnail">
-                            <div class="caption">
-                                <h3>Connect</h3>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="https://www.facebook.com/33ScoutGroup/" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:info@scout33.org" class="btn-social btn-outline"><span class="sr-only">Mail</span><i class="fa fa-fw fa-envelope"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.youtube.com/channel/UCTf6hCQd9nqsAor0aLU0ATA" class="btn-social btn-outline"><span class="sr-only">Youtube</span><i class="fa fa-fw fa-youtube"></i></a>
-                                    </li </ul> </div> </div> </div> </div> <!-- Resources -->
-                                    <div class="col-sm-6 col-md-4">
-                                        <a id="ghost" class="hvr-grow" href="http://www.scout33.org/resources/">
-                                            <div class="card">
-                                                <div id="plus" class="thumbnail">
-                                                    <div class="cardicon">
-                                                        <span class="glyphicon glyphicon-plus aria-hidden=true"></span>
-                                                    </div>
-                                                    <div class="caption">
-                                                        <h3>Resources</h3>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-
-                            </div>
-                        </div>
     </section>
     <header id="abouts">
-        <div class="container" id="maincontent" tabindex="-1">
+        <div  id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/profile.png">
                     <div class="intro-text">
-                        <h1 class="name">We are the 33rd Kerrisdale Scout Group</h1>
+                        <h1>We are the 33rd Kerrisdale Scout Group</h1>
                         <hr class="star-light">
                         <span class="skills">Develop Your Path to Greatness</span>
                     </div>
@@ -233,7 +157,8 @@ get_header(); ?>
                         </div>
                         <div class="thumbnail">
                             <div id="report" class="caption ">
-                                <a href="<?php echo esc_url( get_theme_mod( 'annual_report_setting' ) ); ?>">SEE OUR ANNUAL REPORT</a>
+                                <a href="<?php echo esc_url(get_theme_mod('annual_report_setting')); ?>">SEE OUR ANNUAL
+                                    REPORT</a>
                                 <span class="glyphicon glyphicon-file"></span>
                             </div>
                         </div>
@@ -245,7 +170,7 @@ get_header(); ?>
         </div>
     </header>
     <section id="sections">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Our Sections</h2>
@@ -256,7 +181,9 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/beaver-logo.png" alt="leader-logo">
+                            <img id="section-logo"
+                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/beaver-logo.png"
+                                 alt="leader-logo">
                             <h3>Beavers</h3>
                             <p>Beaver Scouts opens the door for your child to discover the world. It is filled with a
                                 little bit of everything – outdoor activities, games, music and sports. Along the way,
@@ -270,7 +197,9 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/cub-logo.png" alt="leader-logo">
+                            <img id="section-logo"
+                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/cub-logo.png"
+                                 alt="leader-logo">
                             <h3>Cubs</h3>
                             <p>With the Cub motto of “Do Your Best” front and centre, Cub Scouts are encouraged to try
                                 new and more challenging activities. Learning important first aid skills, paddling a
@@ -284,7 +213,9 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/scout-logo.png" alt="leader-logo">
+                            <img id="section-logo"
+                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/scout-logo.png"
+                                 alt="leader-logo">
                             <h3>Scouts</h3>
                             <p>Scouts enjoy outdoor adventures like mountain biking, rock climbing and lots of camping
                                 while working together with other young people to accomplish thrilling challenges</p>
@@ -298,7 +229,9 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/venturer-logo.png" alt="leader-logo">
+                            <img id="section-logo"
+                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/venturer-logo.png"
+                                 alt="leader-logo">
                             <h3>Venturers</h3>
                             <p>Venturer Scouts learn to nurture an active, healthy lifestyle, acquire the knowledge and
                                 skills for career development and participate in thrilling outdoor adventures</p>
@@ -310,7 +243,9 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/rover-logo.png" alt="leader-logo">
+                            <img id="section-logo"
+                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/rover-logo.png"
+                                 alt="leader-logo">
                             <h3>Rovers</h3>
                             <p>Rover Scouts participate in adventurous activities like mountain climbing or white water
                                 rafting. Helping in their local communities Rover Scouts run service activities such as
@@ -324,7 +259,9 @@ get_header(); ?>
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <div class="caption">
-                            <img id="section-logo" src="<?php bloginfo('template_url'); ?>/images/section-logo/leader-logo.png" alt="leader-logo">
+                            <img id="section-logo"
+                                 src="<?php bloginfo('template_url'); ?>/images/section-logo/leader-logo.png"
+                                 alt="leader-logo">
                             <h3>Leaders</h3>
                             <p>Scouting volunteers have provided generations of Canadian youth with a first opportunity
                                 to sleep in a tent, to experience leadership and to build self-reliance and
@@ -340,21 +277,22 @@ get_header(); ?>
     </section>
 
     <section id="sponsors">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2><?php echo (get_theme_mod('sponsor_image_title_setting')); ?></h2>
+                    <h2><?php echo(get_theme_mod('sponsor_image_title_setting')); ?></h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row text-center">
-                <img src="<?php echo esc_url(get_theme_mod('sponsor_image_setting')); ?>" alt="sponsors" class="img-responsive">
+                <img src="<?php echo esc_url(get_theme_mod('sponsor_image_setting')); ?>" alt="sponsors"
+                     class="img-responsive">
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
+        <div class="">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contact Us</h2>
@@ -370,8 +308,6 @@ get_header(); ?>
     </section>
 
 
+<?php
 
-
-    <?php
-
-    get_footer();
+get_footer();

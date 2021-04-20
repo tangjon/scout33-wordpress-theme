@@ -23,7 +23,7 @@
 
 <?php if (is_front_page()) ?>
 
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-md sticky-top" id="sct-nav">
     <div class="container-fluid">
         <a class="navbar-brand" id="sct-navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,4 +57,3 @@
 </body>
 
 </html>
-
