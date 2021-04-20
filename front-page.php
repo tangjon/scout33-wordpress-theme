@@ -343,17 +343,15 @@
     </section>
 
     <section id="contact">
-        <div class="">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Us</h2>
+                    <div class="section-title">Contact Us</div>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row text-center">
-
                 <p>Please contact <b>info@scout33.org</p>
-
             </div>
         </div>
     </section>

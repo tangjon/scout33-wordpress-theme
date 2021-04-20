@@ -18,6 +18,15 @@ body.home.blog.logged-in.admin-bar.hfeed.customize-support {
     }
 }
 
+hr.star-light, hr.star-primary {
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+
 
 /*MENU*/
 
@@ -74,7 +83,7 @@ div#sct-carousel-indicator {
 /*SECTION*/
 section {
     color: white;
-    padding: 50px 0;
+    padding: 140px 0;
 }
 
 .section-title{
@@ -197,4 +206,10 @@ img#section-logo {
 #sponsors {
     color: black;
     background-color: #e6e6e6;
+}
+
+/*CONTACT SECTION*/
+#contact{
+    color: black;
+    background-color: white;
 }
