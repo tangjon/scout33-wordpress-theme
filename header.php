@@ -22,46 +22,33 @@
 <body <?php body_class(); ?>>
 
 <?php if (is_front_page()) ?>
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom affix-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <a href="#page-top">
-                <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                    <?php bloginfo('name'); ?>
-                    <p id="subtitle">SCOUTING GROUP</p>
-                </a>
 
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" id="sct-navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-
-            </a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
-            </button>
+            <?php
+            wp_nav_menu(array(
+                    'menu' => 'primary',
+                    'menu_id' => 'primary-menu',
+                    'theme_location' => 'primary',
+                    'depth' => 1,
+                    'container_class'=>'mx-auto',
+                    'menu_class' => 'navbar-nav',
+                    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                    'link_class'   => 'nav-link',
+                    'walker' => new WP_Bootstrap_Navwalker())
+            );
+            ?>
         </div>
-
-
-
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <?php
-        wp_nav_menu(array(
-                'menu' => 'primary',
-                'theme_location' => 'primary',
-                'depth' => 2,
-                'container' => 'div',
-                'container_class' => 'collapse navbar-collapse',
-                'container_id' => 'bs-example-navbar-collapse-1',
-                'menu_class' => 'nav navbar-nav navbar-right',
-                'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                'walker' => new WP_Bootstrap_Navwalker())
-        );
-        ?>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
 </nav>
+
+
 
 
 </body>
