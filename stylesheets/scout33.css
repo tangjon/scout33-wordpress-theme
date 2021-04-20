@@ -81,7 +81,12 @@ section {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 3em;
+    text-align: center;
+}
+
+.section-body {
+    text-align: center;
 }
 
 /*NOTICE STRIP*/
@@ -128,4 +133,57 @@ section {
 
 #meeting-schedule {
     background-color: #084298;
+}
+
+/*REPORT SECTION*/
+#annual-report{
+    background-color: #9c0c00;
+}
+
+#annual-report-btn {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    background: #9c0c00;
+    font-weight: bold;
+    font-size: 32px;
+    border: solid white;
+    padding: 12px;
+}
+
+#annual-report-btn:hover {
+    text-decoration: underline;
+}
+
+/*VOLUNTEER SECTION*/
+#volunteers {
+    color: black;
+    background-color: white;
+}
+
+
+/*SCOUTING SECTION SECTION*/
+.thumbnail {
+    text-align: center;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+#scouting-sections {
+    background-color: #7EBDC2;
+}
+
+img#section-logo {
+    height: 155px;
+    padding-top: 13px;
 }

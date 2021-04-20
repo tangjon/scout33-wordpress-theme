@@ -162,7 +162,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="meeting-schedule">
@@ -186,94 +185,39 @@
             </div>
         </div>
     </section>
-    <header id="abouts">
-        <div  id="maincontent" tabindex="-1">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <h1>We are the 33rd Kerrisdale Scout Group</h1>
-                        <hr class="star-light">
-                        <span class="skills">Develop Your Path to Greatness</span>
-                    </div>
+
+    <section id="annual-report">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-sm d-flex justify-content-center">
+                    <a id="annual-report-btn" href="<?php echo esc_url(get_theme_mod('annual_report_setting')); ?>">SEE OUR ANNUAL
+                        REPORT</a>
+                    <span class="glyphicon glyphicon-file"></span>
+                </div>
+                <div id="schedule" class="col-sm text-center">
+                    <i class="fas fa-award" style="font-size: 16em"></i>
+
                 </div>
             </div>
-            <section>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="thumbnail">
-                            <div id="aboutus" class="caption">
-                                <h1>About Us</h1>
-                                <p>We are a sized Scouting group proud to be a part of the country’s largest youth
-                                    driven organization, Scouts Canada. We strive to lead youth in discovering new
-                                    experiences where they would not else where, such as camping, water-sports, hiking,
-                                    and much more!
-                                    <br><br>Scouts have a lot of fun discovering new things and experiences they
-                                    wouldn’t have elsewhere. Along the way they develop into capable, confident and
-                                    well-rounded individuals, better prepared for success in the world.
-                                    <br><br>Scouting offers a world where you can discover the best in yourself and the
-                                    best in others. Dollar for dollar, our programs provide significant value. They run
-                                    all year round and offer adventures that youth will remember for a lifetime!</p>
-                            </div>
-                        </div>
-                        <div class="thumbnail">
-                            <div id="" class="caption">
-                                <h1>Our Volunteers</h1>
-                                <p>Volunteers make activites and oppurtunity possible for our group. Without them, we
-                                    would not be able to create wonderful experiences</p>
-                                <a href="<?php site_url(); ?>/volunteers">
-                                    <button type="button" class="btn btn-primary">See Our Volunteers</button>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="thumbnail">
-                            <div id="mission-statement" class="caption">
-                                <h3>Our Mission Statement</h3>
-                                <hr>
-                                <p>The 33rd Group emphasizes the importance of life outside the classroom. Our mission
-                                    is leadership development.
-
-                                    We want to graduate motivated learners, problem solvers, effective communicators and
-                                    responsible young adults who are ready to make a real difference to the
-                                    community.</p>
-                            </div>
-                        </div>
-                        <div class="thumbnail">
-                            <div id="schedule" class="caption">
-                                <h3>Meeting Schedule</h3>
-                                <hr>
-                                <h4>BEAVERS</h4>
-                                <p>12:30PM to 1:30PM</p>
-                                <hr>
-                                <h4>CUBS, SCOUTS, VENTURERS</h4>
-                                <p>2:00PM to 4:30PM</p>
-                                <hr>
-                                <h4>Badge Testing</h4>
-                                <p>1:30PM</p>
-                            </div>
-                        </div>
-                        <div class="thumbnail">
-                            <div id="report" class="caption ">
-                                <a href="<?php echo esc_url(get_theme_mod('annual_report_setting')); ?>">SEE OUR ANNUAL
-                                    REPORT</a>
-                                <span class="glyphicon glyphicon-file"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
         </div>
-    </header>
-    <section id="sections">
-        <div class="">
+    </section>
+
+    <section id="volunteers">
+        <div class="section-title">Our Volunteers</div>
+        <div class="section-body">
+            <p>Volunteers make activites and oppurtunity possible for our group. Without them, we
+                would not be able to create wonderful experiences</p>
+            <a href="<?php site_url(); ?>/volunteers">
+                <button type="button" class="btn btn-primary">See Our Volunteers</button>
+            </a>
+        </div>
+    </section>
+
+    <section id="scouting-sections">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Our Sections</h2>
+                    <div class="section-title">Our Sections</div>
                     <hr class="star-primary">
                 </div>
             </div>
