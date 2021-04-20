@@ -3,6 +3,15 @@ body {
     overflow-x: hidden
 }
 
+body {
+    height: 100vh;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+}
 body.home.blog.logged-in.admin-bar.hfeed.customize-support {
     background-color: white;
 }
@@ -354,6 +363,7 @@ div#quick-connect {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .page-content {
