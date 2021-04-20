@@ -126,9 +126,10 @@ section {
 }
 
 #about-img {
+    border: solid white;
     width: 100%;
     opacity: 0.8;
-    -webkit-filter: blur(3px);
+    -webkit-filter: blur(2px);
 / / change the value according to what suits the best -moz-filter: blur(3 px);
 / / change the value according to what suits the best -o-filter: blur(3 px);
 / / change the value according to what suits the best -ms-filter: blur(3 px);
@@ -225,6 +226,12 @@ img#section-logo {
 /*CONTACT SECTION*/
 #contact{
     color: black;
+    background-color: white;
+}
+
+
+/*QUICK STRIP*/
+#quick-strip{
     background-color: white;
 }
 
