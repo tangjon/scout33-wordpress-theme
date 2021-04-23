@@ -17,9 +17,12 @@
             <div class="row">
                 <div class="col-sm-4">
                     <h2>Location</h2>
-                    <p>680 W 49th Ave
-                        <br>Vancouver, BC V5Z 2S4
-                        <br>St. Matthias & St. Luke Anglican Church</p>
+                    <div>
+                        <?php echo(get_theme_mod('location-settings')); ?>
+                    </div>
+<!--                    <p>680 W 49th Ave-->
+<!--                        <br>Vancouver, BC V5Z 2S4-->
+<!--                        <br>St. Matthias & St. Luke Anglican Church</p>-->
                 </div>
                 <div class="col-sm-4">
                     <h2>Around the Web</h2>

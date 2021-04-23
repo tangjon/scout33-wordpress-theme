@@ -10,6 +10,29 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
+function scout33_setup_footer_customizer($wp_customize){
+    $wp_customize->add_section('footer-section', array(
+        'title' => __('Footer'),
+        'priority' => 10001,
+    ));
+
+    $wp_customize->add_setting('location-settings', array(
+        'default' => array(),
+    ));
+
+
+    $wp_customize->add_control('location-control', array(
+        'type' => 'textarea',
+        'settings' => 'location-settings',
+        'section' => 'footer-section',
+        'label' => __('Location'),
+        'description' => __('Location of church'),
+        'priority' => 90
+    ));
+}
+add_action('customize_register', 'scout33_setup_footer_customizer');
+
+
 function tangyjon_customize_register($wp_customize)
 {
     $wp_customize->get_setting('blogname')->transport = 'postMessage';
