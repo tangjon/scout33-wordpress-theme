@@ -1,3 +1,7 @@
 .idea/
 scrap.html
 /.idea/workspace.xml
+
+php_errorlog
+.git-ftp.log
+.ftpquota
