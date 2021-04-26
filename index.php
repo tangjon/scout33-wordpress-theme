@@ -18,8 +18,6 @@ get_header(); ?>
         <section class="container-fluid">
             <div class="col-lg-8">
                 <?php if (have_posts()) : ?>
-
-
                     <?php if (is_home() && !is_front_page()) : ?>
                         <!--                <div class="col-lg-12 text-center">-->
                         <!--                    <h1 class="blog-header">--><?php //single_post_title(); ?><!--</h1>-->
@@ -49,7 +47,6 @@ get_header(); ?>
                         </div>
 
                     <?php endwhile; ?>
-
 
                 <?php else : ?>
                     <?php get_template_part('template-parts/content', 'none'); ?>

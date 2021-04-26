@@ -184,7 +184,7 @@
                     <span class="glyphicon glyphicon-file"></span>
                 </div>
                 <div id="schedule" class="col-sm text-center">
-                    <i class="fas fa-award" style="font-size: 16em"></i>
+                    <i class="fas fa-award"></i>
 
                 </div>
             </div>
