@@ -194,7 +194,7 @@ section {
 /*QUICK STRIP*/
 #quick-strip {
   padding: 80px 0;
-  background-color: white;
+  background-color: #dfdfdf;
 }
 
 .quick-icon {
@@ -248,18 +248,13 @@ div#quick-connect {
   text-decoration: underline;
 }
 
-#quick-strip {
-  background-color: #580902;
-}
-
 #quick-strip .btn {
   background-color: rgb(19, 85, 0);
-  border: white;
+  border:none;
 }
 
 #quick-strip .btn:hover {
   background-color: rgb(11, 49, 0);
-  border: white;
 }
 
 /*ABOUT*/
