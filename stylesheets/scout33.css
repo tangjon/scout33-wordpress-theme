@@ -3,9 +3,14 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   padding: 0;
+  background-color: #fff5df;
 }
 
 body.home.blog.logged-in.admin-bar.hfeed.customize-support {
+  background-color: #fff5df;
+}
+
+body.page-template-default.page {
   background-color: #fff5df;
 }
 
@@ -40,18 +45,18 @@ hr.star-primary {
 }
 
 /*MENU*/
-
+/* 
 #sct-navbar-brand {
   border-right: solid;
   border-width: 7px;
-}
+} */
 
 .tagline {
   line-height: 4px;
 }
 
 a#sct-navbar-brand {
-  /* clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
   width: 300px;
   background-color: #000033;
   font-size: 23px;
@@ -112,7 +117,6 @@ nav.navbar {
 }
 
 /*CAROUSEL*/
-
 button.carousel-control-next:hover {
   background-color: rgba(70, 69, 69, 0.4);
 }
@@ -259,8 +263,9 @@ section {
   #meeting-schedule i {
     padding-bottom: 0.5em;
   }
-  #meeting-schedule #schedule{padding:0 30px;
-}
+  #meeting-schedule #schedule {
+    padding: 0 30px;
+  }
 }
 
 /*REPORT SECTION*/
@@ -348,7 +353,7 @@ img#section-logo {
   #scouting-sections .container .row .col-sm-4 {
     width: 80%;
     margin: auto;
-    padding:15px;
+    padding: 15px;
   }
   img#section-logo {
     margin: 20px auto;
@@ -450,9 +455,6 @@ div#quick-connect {
 #page {
   background-color: #f3dfa2;
   padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
 }
 
 .page-content {
