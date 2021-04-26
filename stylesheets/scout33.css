@@ -6,7 +6,7 @@ body {
   background-color: #fff5df;
 }
 
-body.home.blog.logged-in.admin-bar.hfeed.customize-support {
+body.home {
   background-color: #fff5df;
 }
 
@@ -125,7 +125,8 @@ button.carousel-control-prev:hover {
   background-color: rgba(70, 69, 69, 0.4);
 }
 .carousel {
-  background-color: #ff7575;
+  /* background-color: #ff7575; */
+  background-color: #c8d9ff;
   background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
   padding: 30px 40px;
   min-height: 480px;
@@ -179,7 +180,7 @@ section {
 
 /*NOTICE STRIP*/
 #notice-strip {
-  background-color: #9c0c00;
+  background-color: #003;
 }
 #notice-strip .container {
   width: 75%;
@@ -189,15 +190,78 @@ section {
 #notice-strip .container p {
   padding-top: 10px;
 }
+
+/*QUICK STRIP*/
+#quick-strip {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.quick-icon {
+  display: flex;
+  justify-content: center;
+  font-size: 150px;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.quick-link {
+  text-decoration: none;
+}
+
+#quick-content > * {
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#quick-calendar .card {
+  background-color: purple;
+}
+#quick-calendar .card:hover {
+  background-color: rgb(73, 1, 73);
+}
+#quick-resources .card {
+  background-color: #2e86ab;
+}
+#quick-resources .card:hover {
+  background-color: #1a4e64;
+}
+
+#quick-forms .card {
+  background-color: #f9a01f;
+}
+#quick-forms .card:hover {
+  background-color: #754e14;
+}
+
+#quick-connect {
+  background-color: #267d34;
+}
+
+div#quick-connect {
+  justify-content: center;
+}
+
+.quick-link:hover .card-title {
+  text-decoration: underline;
+}
+
+#quick-strip {
+  background-color: #580902;
+}
+
 #quick-strip .btn {
-  background-color: rgb(204, 46, 46);
+  background-color: rgb(19, 85, 0);
   border: white;
 }
 
 #quick-strip .btn:hover {
-  background-color: rgb(148, 33, 33);
+  background-color: rgb(11, 49, 0);
   border: white;
 }
+
 /*ABOUT*/
 #about {
   padding: 0 0;
@@ -382,63 +446,6 @@ img#section-logo {
   background-color: white;
 }
 
-/*QUICK STRIP*/
-#quick-strip {
-  padding: 80px 0;
-  background-color: white;
-}
-
-.quick-icon {
-  display: flex;
-  justify-content: center;
-  font-size: 150px;
-  text-align: center;
-  padding: 60px 0;
-}
-
-.quick-link {
-  text-decoration: none;
-}
-
-#quick-content > * {
-  color: white;
-  padding: 5px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#quick-calendar .card {
-  background-color: purple;
-}
-#quick-calendar .card:hover {
-  background-color: rgb(73, 1, 73);
-}
-#quick-resources .card {
-  background-color: #2e86ab;
-}
-#quick-resources .card:hover {
-  background-color: #1a4e64;
-}
-
-#quick-forms .card {
-  background-color: #f9a01f;
-}
-#quick-forms .card:hover {
-  background-color: #754e14;
-}
-
-#quick-connect {
-  background-color: #f24236;
-}
-
-div#quick-connect {
-  justify-content: center;
-}
-
-.quick-link:hover .card-title {
-  text-decoration: underline;
-}
-
 /*FOOTER*/
 
 #sct-footer {
@@ -456,17 +463,17 @@ div#quick-connect {
   list-style: none;
 }
 
-#sct-footer .widget-area ul{
+#sct-footer .widget-area ul {
   list-style: none;
-  color:white;
-  padding-left:0;
+  color: white;
+  padding-left: 0;
 }
-#sct-footer .widget-area ul a{
-  color:white;
+#sct-footer .widget-area ul a {
+  color: white;
   text-decoration: none;
 }
-#sct-footer .widget-area ul a:hover{
-  color:rgb(24, 117, 170);
+#sct-footer .widget-area ul a:hover {
+  color: rgb(24, 117, 170);
 }
 #page {
   background-color: #f3dfa2;
@@ -497,7 +504,6 @@ a {
   padding: 15px 12px 12px;
   list-style: none;
 } */
-
 
 .entry-title {
   text-align: center;
