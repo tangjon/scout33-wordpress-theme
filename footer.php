@@ -37,6 +37,9 @@
                     <!-- Youtube -->
                     <a class="btn btn-primary" style="background-color: #333333;" href="mailto:info@scout33.org" role="button"><i class="fas fa-envelope"></i></a>
                 </div>
+                <div class="col-sm-4">
+                    <?php get_sidebar(); ?>
+                </div>
             </div>
         </div>
     </div>

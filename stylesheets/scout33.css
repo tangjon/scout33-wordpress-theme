@@ -451,7 +451,20 @@ div#quick-connect {
   display: flex;
   justify-content: space-evenly;
 }
+#sct-footer .widget-area {
+  text-decoration: none;
+  list-style: none;
+}
 
+#sct-footer .widget-area ul{
+  list-style: none;
+  color:white;
+  padding-left:0;
+}
+#sct-footer .widget-area ul a{
+  color:white;
+  text-decoration: none;
+}
 #page {
   background-color: #f3dfa2;
   padding: 15px;
@@ -464,12 +477,12 @@ div#quick-connect {
   flex: 2 1;
 }
 
-.sidebar {
-  flex: 1 2;
-}
-
 a {
   color: #f44336;
+}
+/* [SIDEBAR REMOVED] */
+/* .sidebar {
+  flex: 1 2;
 }
 
 .sidebar {
@@ -480,11 +493,8 @@ a {
   color: white;
   padding: 15px 12px 12px;
   list-style: none;
-}
+} */
 
-.widget-area {
-  text-decoration: none;
-}
 
 .entry-title {
   text-align: center;
