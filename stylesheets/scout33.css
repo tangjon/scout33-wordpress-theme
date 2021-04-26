@@ -465,6 +465,9 @@ div#quick-connect {
   color:white;
   text-decoration: none;
 }
+#sct-footer .widget-area ul a:hover{
+  color:rgb(24, 117, 170);
+}
 #page {
   background-color: #f3dfa2;
   padding: 15px;
