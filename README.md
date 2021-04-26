@@ -19,6 +19,9 @@ A custom WordPress theme for https://www.scout33.org/
 To manage the gallery from customizer, we need to be able to access the gallery.
 https://github.com/xwp/wp-customize-image-gallery-control
 
+(Recommended) Custom Meta Widget, allows users to choose which of the links in meta to display.
+https://wordpress.org/plugins/custom-meta-widget/
+
 # Maintainers
 
 - Jonathan Tang
